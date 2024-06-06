@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+// paleta de colores
+$color1: #264D8E;
+$color2: #37B34A;
+$color3: #329240;
+$color4: #000;
+$colorFooter: #cccccc;
+$colorFooterHover: #fff;
+
+// fuentes
+$fuente-principal: "Inter", sans-serif;
+$fuente-titulos : "Lato", sans-serif;
+$fuente-h1: "Figtree", sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $fuente-principal;
+}
+
+/* inicio */
+/* text fijo*/
+.text-fijo{
+    font-size: 14px;
+    text-align: center;
+    background-color: #329240;
+    font-weight: 600;
+}
+
+.logo-principal{
+    width: 175px;
+    margin: 9px 0px 9px 50px;
+}
+
+/* navbar */
+.collapse{
+    justify-content: end;
+}
+
+.navbar-nav{
+    margin-right: 85px;
+    font-size: 20px;
+}
+
+.nav-link{
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+/* categorias */
+h1{
+    text-align: center;
+    font-family: $fuente-principal;
+    margin-top: 35px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.sub-cont-categorias1{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-cont-categorias2{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.categoria{
+    margin: 15px 70px 0px 70px;
+    img{
+        margin-left: 20px;
+        width: 120px;
+    }
+    h3{
+        font-size: 16px;
+        text-align: center;
+        margin-left: 15px;
+        padding-top: 8px;
+    }
+}
+
+//estilos titulos e imagenes
+
+.img-categoria2{
+    padding-left: 5px;
+}
+
+.h3-2{
+    padding-left: 7px;
+}
+
+.h3-dif-2{
+    padding-left: 20px;
+}
+
+.ortopedia{
+    padding-left: 7px;
+}
+
+.pañal{
+    padding-left: 4px;
+}
+
+/* ofertas */
+.sub-cont-descuentos{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    p{
+        margin-right: 250px;
+        font-size: 21px;
+    }
+    a{
+        margin-left: 250px;
+        font-size: 18px;
+        text-decoration: none;
+        color: $color2;
+        font-weight: 600;
+    }
+}
+
+.img-descuentos{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 325px;
+        margin: 0px 20px 20px 20px;
+        border-radius: 10px;
+    }
+}
+
+.contenedor-descuentos{
+    background-color: rgb(238, 238, 238);
+    padding: 17px;
+    margin-top: 90px;
+    box-shadow: 0 0 10px rgba(194, 194, 194, 0.616);
+}
+
+/* footer */
+.logo-footer{
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(
+        0 0 5px rgba(155, 155, 155, 0.185)
+    );
+}
+
+.parrafoSeguinos{
+    color: $colorFooter;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.contenedorFooter{
+    border-top: 2px solid $color4;
+    margin-top: 80px;
+    background-color:rgb(52, 87, 87);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    li{
+        list-style: none;
+        color: $colorFooter;
+        padding: 2px;
+        a{
+            color: $color4;
+            text-decoration: none;
+            &:hover{
+                color: $colorFooterHover;
+            }
+        }
+    }
+}
+
+.redesLista1{
+    a{
+        color: $colorFooter;
+        font-size: 25px;
+        letter-spacing: 15px;
+
+        &:hover{
+            color: $colorFooterHover;
+        }
+    }
+}
+
+.tituloListaFooter{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.subTitulolistaFooter{
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.listaFooter2{
+    li{
+        a{
+            color: $colorFooter;
+        }
+    }
+}
+
+/* link wspp */
+.wsppLink{
+    height: 53px;
+    width: 53px;
+    background-color: $color3;
+    color: $colorFooter;
+    position: fixed;
+    bottom: 55px;
+    right: 50px;
+    line-height: 53px;
+    border-radius: 50%;
+    box-shadow: 0 0 7px #2c2c2c;
+    text-align: center;
+    font-size: 32px;
+
+    &:hover{
+        color: $colorFooterHover;
+    }
+}
+
+/* productos */
+.contenedorEnlacesProductos{
+    background-color: $color1;
+    text-align: center;
+    height: 38px;
+    a{
+        color: $colorFooterHover;
+        text-decoration: none;
+        padding: 9px;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 38px;
+        border-right: 3px solid $color4;
+    }
+    .aDif{
+        border: none;
+    }
+}
+
+/* pañales */
+//titulo pañales
+.tituloProductos{
+    margin-top: 35px;
+    text-align: center;
+    background-color: $colorFooter;
+    font-size: 16px;
+    color: $color4;
+    height: 25px;
+    line-height: 25px;
+}
+
+//card pañales
+.contenedorPañales{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    .card{
+        margin: 25px;
+        .card-title{
+            font-size: 22px;
+        }
+        .list-group-item{
+            font-size: 15px;
+        }
+    }
+}
+
+//dietetica
+.contenedorDietetica{
+    @extend .contenedorPañales;
+}
+
+.contenedorDietetica2{
+    @extend .contenedorPañales;
+    .card-img-top{
+        width: 140px;
+        margin-left: 72px;
+    }
+}
+
+
+//ortopedia
+.contenedorOrtopedia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    .card{
+        margin: 25px;
+        .card-title{
+            font-size: 22px;
+        }
+    }
+}
+
+//productos faciales
+.contenedorProductosFaciales{
+    @extend .contenedorOrtopedia;
+}
+
+//perfumeria
+
+
+/* salud */
+/* diabetes */
+.diabetes{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)),
+    url(../assets/¿Qué-es-la-diabetes-mellitus4.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: right;
+    h3{
+        color: $colorFooterHover;
+        padding-top: 100px;
+        padding-right: 90px;
+        font-size: 40px;
+        font-family: $fuente-titulos;
+    }
+    p{
+        color: $colorFooterHover;
+        padding-top: 20px;
+        padding-right: 90px;
+        font-size: 19px;
+    }
+    a{
+        color: $colorFooterHover;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-right: 90px;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 7px;
+        background-color: #5e84c5;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
