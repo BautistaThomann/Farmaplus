@@ -98,16 +98,16 @@ h1 {
 }
 
 /* ofertas */
-.sub-cont-descuentos {
+.sub-cont-novedades {
   margin: 20px;
   display: flex;
   justify-content: space-around;
 }
-.sub-cont-descuentos p {
-  margin-right: 250px;
+.sub-cont-novedades p {
+  margin-right: 150px;
   font-size: 21px;
 }
-.sub-cont-descuentos a {
+.sub-cont-novedades a {
   margin-left: 250px;
   font-size: 18px;
   text-decoration: none;
@@ -115,23 +115,37 @@ h1 {
   font-weight: 600;
 }
 
-.img-descuentos {
+.img-novedades {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.img-descuentos img {
+.img-novedades img {
   width: 325px;
-  margin: 0px 20px 20px 20px;
+  margin: 0px 30px 20px 30px;
   border-radius: 10px;
 }
 
-.contenedor-descuentos {
+.contenedor-novedades {
   background-color: rgb(238, 238, 238);
   padding: 17px;
   margin-top: 90px;
   box-shadow: 0 0 10px rgba(194, 194, 194, 0.616);
 }
 
+/* día del padre */
+.contenedorImgPadre {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contenedorImgPadre img {
+  width: 600px;
+  margin: 10px;
+}
+
+/* colgate */
 /* footer */
 .logo-footer {
   width: 100px;
@@ -203,7 +217,7 @@ h1 {
   right: 50px;
   line-height: 53px;
   border-radius: 50%;
-  box-shadow: 0 0 7px #2c2c2c;
+  box-shadow: 0 0 6px #575757;
   text-align: center;
   font-size: 32px;
 }
@@ -282,9 +296,10 @@ h1 {
 .diabetes {
   width: 100%;
   height: 700px;
-  background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)), url(../assets/¿Qué-es-la-diabetes-mellitus4.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)), url(../assets/diabetes.jpg);
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   text-align: right;
 }
 .diabetes h3 {
@@ -303,7 +318,7 @@ h1 {
 .diabetes a {
   color: #fff;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-right: 90px;
   font-size: 18px;
   padding: 10px;
@@ -312,4 +327,98 @@ h1 {
 }
 .diabetes a:hover {
   text-decoration: underline;
+}
+
+.contenedorPlantillas {
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+  margin-bottom: 90px;
+}
+.contenedorPlantillas .textoTitulo h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+}
+.contenedorPlantillas .textoTitulo p {
+  font-size: 19px;
+  padding-top: 20px;
+}
+.contenedorPlantillas .textoTitulo a {
+  color: #000;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #cccccc;
+}
+.contenedorPlantillas .textoTitulo a:hover {
+  text-decoration: underline;
+}
+.contenedorPlantillas .plantillas img {
+  width: 460px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.contenedorRecetas {
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+  margin-bottom: 110px;
+}
+.contenedorRecetas .textoTitulo2 h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+}
+.contenedorRecetas .textoTitulo2 p {
+  font-size: 19px;
+  padding-top: 20px;
+}
+.contenedorRecetas .textoTitulo2 a {
+  color: #000;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #cccccc;
+}
+.contenedorRecetas .textoTitulo2 a:hover {
+  text-decoration: underline;
+}
+.contenedorRecetas .recetas img {
+  width: 550px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+/* sucursales */
+.contenedorMapas {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+.contenedorMapas .sucursalEtruria .h3mapas, .contenedorMapas .sucursalPasco .h3mapas, .contenedorMapas .sucursalLaguna .h3mapas {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 13px;
+  font-family: "Lato", sans-serif;
+}
+.contenedorMapas .sucursalEtruria .listaMapa li, .contenedorMapas .sucursalPasco .listaMapa li, .contenedorMapas .sucursalLaguna .listaMapa li {
+  list-style: none;
+  margin-top: 10px;
+}
+.contenedorMapas .sucursalEtruria .listaMapa li i, .contenedorMapas .sucursalPasco .listaMapa li i, .contenedorMapas .sucursalLaguna .listaMapa li i {
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #37B34A;
+  height: 40px;
+  width: 40px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
 }/*# sourceMappingURL=estilo.css.map */
