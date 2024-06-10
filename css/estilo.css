@@ -98,21 +98,26 @@ h1 {
 }
 
 /* ofertas */
-.sub-cont-novedades {
+.sub-cont-novedades, .contenedorOfertas .sub-cont-ofertas, .diaPadre .sub-cont-padre {
   margin: 20px;
   display: flex;
   justify-content: space-around;
 }
-.sub-cont-novedades p {
+.sub-cont-novedades p, .contenedorOfertas .sub-cont-ofertas p, .diaPadre .sub-cont-padre p {
+  margin-top: 5px;
   margin-right: 150px;
   font-size: 21px;
 }
-.sub-cont-novedades a {
+.sub-cont-novedades a, .contenedorOfertas .sub-cont-ofertas a, .diaPadre .sub-cont-padre a {
+  margin-top: 5px;
   margin-left: 250px;
   font-size: 18px;
   text-decoration: none;
   color: #37B34A;
   font-weight: 600;
+}
+.sub-cont-novedades a:hover, .contenedorOfertas .sub-cont-ofertas a:hover, .diaPadre .sub-cont-padre a:hover {
+  text-decoration: underline;
 }
 
 .img-novedades {
@@ -123,10 +128,10 @@ h1 {
 .img-novedades img {
   width: 325px;
   margin: 0px 30px 20px 30px;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
-.contenedor-novedades {
+.contenedor-novedades, .contenedorOfertas {
   background-color: rgb(238, 238, 238);
   padding: 17px;
   margin-top: 90px;
@@ -134,18 +139,47 @@ h1 {
 }
 
 /* día del padre */
-.contenedorImgPadre {
-  margin-top: 70px;
+.diaPadre {
+  margin: 80px 0px 80px 0px;
+}
+.diaPadre .sub-cont-padre {
+  margin: 0;
+}
+.diaPadre .contenedorImgPadre {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.contenedorImgPadre img {
+.diaPadre .contenedorImgPadre img {
   width: 600px;
   margin: 10px;
+  border-radius: 7px;
 }
 
 /* colgate */
+.contenedorOfertas {
+  padding-bottom: 40px;
+}
+.contenedorOfertas .sub-cont-ofertas p {
+  margin-right: 650px;
+  margin-top: 5px;
+}
+.contenedorOfertas .sub-cont-ofertas a {
+  margin-left: 300px;
+  margin-top: 5px;
+}
+.contenedorOfertas .img-descuentos-colgate {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contenedorOfertas .img-descuentos-colgate img {
+  width: 350px;
+  margin: 10px;
+  border-radius: 7px;
+}
+
 /* footer */
 .logo-footer {
   width: 100px;
@@ -211,13 +245,13 @@ h1 {
   height: 53px;
   width: 53px;
   background-color: #329240;
-  color: #cccccc;
+  color: #fff;
   position: fixed;
   bottom: 55px;
   right: 50px;
   line-height: 53px;
   border-radius: 50%;
-  box-shadow: 0 0 6px #575757;
+  box-shadow: 0 0 6px #4e4e4e;
   text-align: center;
   font-size: 32px;
 }
@@ -244,7 +278,14 @@ h1 {
   border: none;
 }
 
-/* pañales */
+.btn {
+  padding: 7px;
+  margin-top: 5px;
+}
+.btn:hover {
+  text-decoration: underline;
+}
+
 .tituloProductos {
   margin-top: 35px;
   text-align: center;
@@ -253,22 +294,23 @@ h1 {
   color: #000;
   height: 25px;
   line-height: 25px;
+  scroll-margin-top: 35px;
 }
 
-.contenedorPañales, .contenedorDietetica2, .contenedorDietetica {
+.contenedorPañales, .contenedorDietetica2, .contenedorDietetica, .contenedorLeches {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 25px;
   margin-bottom: 40px;
 }
-.contenedorPañales .card, .contenedorDietetica2 .card, .contenedorDietetica .card {
+.contenedorPañales .card, .contenedorDietetica2 .card, .contenedorDietetica .card, .contenedorLeches .card {
   margin: 25px;
 }
-.contenedorPañales .card .card-title, .contenedorDietetica2 .card .card-title, .contenedorDietetica .card .card-title {
+.contenedorPañales .card .card-title, .contenedorDietetica2 .card .card-title, .contenedorDietetica .card .card-title, .contenedorLeches .card .card-title {
   font-size: 22px;
 }
-.contenedorPañales .card .list-group-item, .contenedorDietetica2 .card .list-group-item, .contenedorDietetica .card .list-group-item {
+.contenedorPañales .card .list-group-item, .contenedorDietetica2 .card .list-group-item, .contenedorDietetica .card .list-group-item, .contenedorLeches .card .list-group-item {
   font-size: 15px;
 }
 
@@ -277,17 +319,17 @@ h1 {
   margin-left: 72px;
 }
 
-.contenedorOrtopedia, .contenedorProductosFaciales {
+.contenedorOrtopedia, .contenedorAccesorios, .contenedorProductosFaciales {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 25px;
   margin-bottom: 40px;
 }
-.contenedorOrtopedia .card, .contenedorProductosFaciales .card {
+.contenedorOrtopedia .card, .contenedorAccesorios .card, .contenedorProductosFaciales .card {
   margin: 25px;
 }
-.contenedorOrtopedia .card .card-title, .contenedorProductosFaciales .card .card-title {
+.contenedorOrtopedia .card .card-title, .contenedorAccesorios .card .card-title, .contenedorProductosFaciales .card .card-title {
   font-size: 22px;
 }
 
