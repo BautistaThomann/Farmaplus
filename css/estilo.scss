@@ -210,6 +210,10 @@ h1{
     );
 }
 
+footer{
+    background-color:rgb(52, 87, 87);
+}
+
 .parrafoSeguinos{
     color: $colorFooter;
     margin-top: 2px;
@@ -219,7 +223,6 @@ h1{
 .contenedorFooter{
     border-top: 2px solid $color4;
     margin-top: 80px;
-    background-color:rgb(52, 87, 87);
     padding-top: 50px;
     padding-bottom: 30px;
     display: flex;
@@ -267,6 +270,16 @@ h1{
         a{
             color: $colorFooter;
         }
+    }
+}
+
+.contTextoFooter{
+    p{
+        margin: 0;
+        padding-bottom: 15px;
+        text-align: center;
+        color: $colorFooter;
+        font-size: 14px;
     }
 }
 
@@ -384,6 +397,15 @@ h1{
 
 //productos faciales
 .contenedorProductosFaciales{
+    @extend .contenedorOrtopedia;
+}
+
+//suplementos
+.contenedorSuplementos{
+    @extend .contenedorOrtopedia;
+}
+
+.contenedorSuplementos2{
     @extend .contenedorOrtopedia;
 }
 
@@ -546,4 +568,159 @@ h1{
     .sucursalPasco{
         @extend .sucursalEtruria;
     }
+}
+
+//media queris
+//productos
+@media (max-width: 1020px){
+    .card{
+        width: 12rem;
+    }
+}
+
+//navbar
+@media (max-width: 1020px){
+    .logo-principal{
+        width: 115px;
+        margin-left: 5px;
+    }
+    .text-fijo{
+        font-size: 11px;
+    }
+    
+}
+
+//inicio
+@media (max-width: 1020px){
+    h1{
+        font-size: 20px;
+    }
+    .categoria{
+        margin: 2px;
+        a{
+            img{
+                width: 65px;
+            }
+        }
+        h3{
+            font-size: 9px;
+        }
+    }
+    .sub-cont-categorias1{
+        margin-right: 25px;
+    }
+    .sub-cont-categorias2{
+        margin-right: 40px;
+    }
+    .contenedor-novedades{
+        margin-top: 40px;
+    }
+    .sub-cont-novedades{
+        margin-bottom: 10px;
+        p{
+            font-size: 13px;
+            margin-right: 40px;
+        }
+        a{
+            font-size: 11px;
+            margin-left: 30px;
+        }
+    }
+    .img-novedades{
+        img{
+            width: 150px;
+            margin: 0px 12px 10px 12px;
+        }
+    }
+    .sub-cont-padre{
+        margin-bottom: 0;
+        p{
+            margin-left: 18px;
+        }
+        a{
+            margin-right: 10px;
+        }
+    }
+    .diaPadre{
+        margin-bottom: 60px;
+        margin-top: 60px;
+        .contenedorImgPadre{
+            margin-top: 0;
+            img{
+                width: 300px;
+            }
+        }
+    }
+    .contenedorOfertas{
+        .img-descuentos-colgate{
+            img{
+                width: 150px;
+            }
+        }
+        .sub-cont-ofertas{
+            margin-left: 32px;
+        }
+    }
+    .logo-footer{
+        width: 70px;
+        height: 70px;
+    }
+    .parrafoSeguinos{
+        font-size: 11px;
+    }
+    .redesLista1{
+        a{
+            font-size: 17px;
+            letter-spacing: 5px;
+        }
+        
+    }
+    .tituloListaFooter{
+        font-size: 14px;
+    }
+    .subTitulolistaFooter{
+        font-size: 12px;
+    }
+    .listaFooter2{
+        ul{
+            li{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .listaFooter3{
+        ul{
+            li{
+                font-size: 11px;
+            }
+            .tituloListaFooter{
+                font-size: 14px;
+            }
+        }
+    }
+    .contTextoFooter{
+        p{
+            font-size: 12px;
+        }
+    }
+    .contenedorFooter{
+        padding-bottom: 20px;
+        margin-top: 70px;
+    }
+    footer{
+        text-align: center;
+    }
+    .wsppLink{
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        font-size: 22px;
+        bottom: 32px;
+        right: 25px;
+        box-shadow: 0 0 3px #4e4e4e;
+        position: fixed;
+    }
+
 }

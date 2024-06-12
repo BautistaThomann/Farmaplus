@@ -187,6 +187,10 @@ h1 {
   filter: drop-shadow(0 0 5px rgba(155, 155, 155, 0.185));
 }
 
+footer {
+  background-color: rgb(52, 87, 87);
+}
+
 .parrafoSeguinos {
   color: #cccccc;
   margin-top: 2px;
@@ -196,7 +200,6 @@ h1 {
 .contenedorFooter {
   border-top: 2px solid #000;
   margin-top: 80px;
-  background-color: rgb(52, 87, 87);
   padding-top: 50px;
   padding-bottom: 30px;
   display: flex;
@@ -238,6 +241,14 @@ h1 {
 
 .listaFooter2 li a {
   color: #cccccc;
+}
+
+.contTextoFooter p {
+  margin: 0;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #cccccc;
+  font-size: 14px;
 }
 
 /* link wspp */
@@ -319,17 +330,17 @@ h1 {
   margin-left: 72px;
 }
 
-.contenedorOrtopedia, .contenedorAccesorios, .contenedorProductosFaciales {
+.contenedorOrtopedia, .contenedorAccesorios, .contenedorSuplementos2, .contenedorSuplementos, .contenedorProductosFaciales {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 25px;
   margin-bottom: 40px;
 }
-.contenedorOrtopedia .card, .contenedorAccesorios .card, .contenedorProductosFaciales .card {
+.contenedorOrtopedia .card, .contenedorAccesorios .card, .contenedorSuplementos2 .card, .contenedorSuplementos .card, .contenedorProductosFaciales .card {
   margin: 25px;
 }
-.contenedorOrtopedia .card .card-title, .contenedorAccesorios .card .card-title, .contenedorProductosFaciales .card .card-title {
+.contenedorOrtopedia .card .card-title, .contenedorAccesorios .card .card-title, .contenedorSuplementos2 .card .card-title, .contenedorSuplementos .card .card-title, .contenedorProductosFaciales .card .card-title {
   font-size: 22px;
 }
 
@@ -463,4 +474,127 @@ h1 {
   line-height: 30px;
   border-radius: 50%;
   text-align: center;
+}
+@media (max-width: 1020px) {
+  .card {
+    width: 12rem;
+  }
+}
+@media (max-width: 1020px) {
+  .logo-principal {
+    width: 115px;
+    margin-left: 5px;
+  }
+  .text-fijo {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1020px) {
+  h1 {
+    font-size: 20px;
+  }
+  .categoria {
+    margin: 2px;
+  }
+  .categoria a img {
+    width: 65px;
+  }
+  .categoria h3 {
+    font-size: 9px;
+  }
+  .sub-cont-categorias1 {
+    margin-right: 25px;
+  }
+  .sub-cont-categorias2 {
+    margin-right: 40px;
+  }
+  .contenedor-novedades, .contenedorOfertas {
+    margin-top: 40px;
+  }
+  .sub-cont-novedades, .diaPadre .sub-cont-padre, .contenedorOfertas .sub-cont-ofertas {
+    margin-bottom: 10px;
+  }
+  .sub-cont-novedades p, .diaPadre .sub-cont-padre p, .contenedorOfertas .sub-cont-ofertas p {
+    font-size: 13px;
+    margin-right: 40px;
+  }
+  .sub-cont-novedades a, .diaPadre .sub-cont-padre a, .contenedorOfertas .sub-cont-ofertas a {
+    font-size: 11px;
+    margin-left: 30px;
+  }
+  .img-novedades img {
+    width: 150px;
+    margin: 0px 12px 10px 12px;
+  }
+  .sub-cont-padre {
+    margin-bottom: 0;
+  }
+  .sub-cont-padre p {
+    margin-left: 18px;
+  }
+  .sub-cont-padre a {
+    margin-right: 10px;
+  }
+  .diaPadre {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+  .diaPadre .contenedorImgPadre {
+    margin-top: 0;
+  }
+  .diaPadre .contenedorImgPadre img {
+    width: 300px;
+  }
+  .contenedorOfertas .img-descuentos-colgate img {
+    width: 150px;
+  }
+  .contenedorOfertas .sub-cont-ofertas {
+    margin-left: 32px;
+  }
+  .logo-footer {
+    width: 70px;
+    height: 70px;
+  }
+  .parrafoSeguinos {
+    font-size: 11px;
+  }
+  .redesLista1 a {
+    font-size: 17px;
+    letter-spacing: 5px;
+  }
+  .tituloListaFooter {
+    font-size: 14px;
+  }
+  .subTitulolistaFooter {
+    font-size: 12px;
+  }
+  .listaFooter2 ul li a {
+    font-size: 12px;
+  }
+  .listaFooter3 ul li {
+    font-size: 11px;
+  }
+  .listaFooter3 ul .tituloListaFooter {
+    font-size: 14px;
+  }
+  .contTextoFooter p {
+    font-size: 12px;
+  }
+  .contenedorFooter {
+    padding-bottom: 20px;
+    margin-top: 70px;
+  }
+  footer {
+    text-align: center;
+  }
+  .wsppLink {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 22px;
+    bottom: 32px;
+    right: 25px;
+    box-shadow: 0 0 3px #4e4e4e;
+    position: fixed;
+  }
 }/*# sourceMappingURL=estilo.css.map */

@@ -4,10 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Farmacias farmaplus en Etruria la laguna y Pasco.
+  Amplio stock de medicamentos, perfumería, ortopedia, dietética, pañales, accesorios para la belleza y el cuidado de tu salud">
+  <meta name="keywords" content="farmacia, productos, pañalera, pañales, ortopedia, receta, sucursales, dietética, accesorios, suplementos, leches maternizadas, productos faciales, dove, axe, colgate, body care, moda, ofertas, tresemme">
   <link rel="shortcut icon" href="./assets/logo-sec-pag.png" type="image/x-icon">
   <!-- linkeo libreria font awasome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- fin linkeo awasome -->
+  <!-- linkeo aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- fin linkeo aos -->
   <!-- linkeo bs -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -17,59 +23,60 @@
 </head>
 
 <body>
-  <div class="text-fijo">15% de descuento pagando con Mercado Pago</div>
-  <!-- inicio nav-bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-        <img class="logo-principal" src="./assets/logo-principal-pag.png" alt="Logo-Farmaplus-Pagina">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/productos.html">Productos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Salud
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="./pages/salud.html">Envianos tu receta</a></li>
-              <li><a class="dropdown-item" href="./pages/salud.html">Farmacia experta en diabetes</a></li>
-              <li><a class="dropdown-item" href="./pages/salud.html">Plantillas computarizadas</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
-          </li>
-
-        </ul>
+  <header>
+    <div class="text-fijo">15% de descuento pagando con Mercado Pago</div>
+    <!-- inicio nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img class="logo-principal" src="./assets/logo-principal-pag.png" alt="logo-farmaplus-página">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Salud
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./pages/salud.html">Envianos tu receta</a></li>
+                <li><a class="dropdown-item" href="./pages/salud.html">Farmacia experta en diabetes</a></li>
+                <li><a class="dropdown-item" href="./pages/salud.html">Plantillas computarizadas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <!-- fin nav-bar -->
   <!-- inicio carrusel -->
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active d-item">
-        <img src="./assets/axe-banner-biza.jpg" class="d-img d-block w-100" alt="...">
+        <img src="./assets/axe-banner-biza.jpg" class="d-img d-block w-100" alt="axe-banner-biza">
       </div>
       <div class="carousel-item d-item">
-        <img src="./assets/cif-banner.jpg" class="d-img d-block w-100" alt="...">
+        <img src="./assets/cif-banner.jpg" class="d-img d-block w-100" alt="cif-banner">
       </div>
       <div class="carousel-item d-item">
-        <img src="./assets/banner-dove.jpg" class="d-img d-block w-100" alt="...">
+        <img src="./assets/banner-dove.jpg" class="d-img d-block w-100" alt="dove-banner">
       </div>
       <div class="carousel-item d-item">
-        <img src="./assets/sedal-banner.jpg" class="d-img d-block w-100" alt="...">
+        <img src="./assets/sedal-banner.jpg" class="d-img d-block w-100" alt="sedal-banner">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -87,41 +94,41 @@
     <div class="contenedor-categorias">
       <div class="sub-cont-categorias1">
         <div class="categoria">
-          <a href="./pages/salud.html"><img class="img-categoria2" src="./assets/receta.png" alt=""></a>
+          <a href="./pages/salud.html"><img class="img-categoria2" src="./assets/receta.png" alt="icono-receta"></a>
           <h3>Envianos tu receta</h3>
         </div>
 
         <div class="categoria">
-          <a href="./pages/productos.html"><img class="img-categoria" src="./assets/panal.png" alt=""></a>
+          <a href="./pages/productos.html"><img class="img-categoria" src="./assets/panal.png" alt="icono-pañalera"></a>
           <h3 class="pañal">Pañalera</h3>
         </div>
 
         <div class="categoria">
-          <a href="./pages/productos.html"><img class="img-categoria" src="./assets/brazo-roto.png" alt=""></a>
+          <a href="./pages/productos.html"><img class="img-categoria" src="./assets/brazo-roto.png" alt="icono-ortopedia"></a>
           <h3 class="ortopedia">Ortopedia</h3>
         </div>
         <div class="categoria">
-          <a href="./pages/productos.html"><img class="img-categoria2" src="./assets/dietetica.png" alt=""></a>
-          <h3 class="h3-dif-2">Dietetica</h3>
+          <a href="./pages/productos.html"><img class="img-categoria2" src="./assets/dietetica.png" alt="icono-dietetica"></a>
+          <h3 class="h3-dif-2">Dietética</h3>
         </div>
       </div>
       <div class="sub-cont-categorias2">
         <div class="categoria">
-          <a href="./pages/productos.html"><img class="img-categoria2" src="./assets/suplemento-proteico.png" alt=""></a>
+          <a href="./pages/productos.html"><img class="img-categoria2" src="./assets/suplemento-proteico.png" alt="icono-suplementos"></a>
           <h3 class="h3-2">Suplementos</h3>
         </div>
 
         <div class="categoria">
-          <a href="./pages/productos.html"><img class="img-categoria2" src="./assets/bolso.png" alt=""></a>
+          <a href="./pages/productos.html"><img class="img-categoria2" src="./assets/bolso.png" alt="icono-accesorios"></a>
           <h3 class="h3-2">Accesorios</h3>
         </div>
 
         <div class="categoria">
-          <a href="./pages/productos.html"><img class="img-categoria" src="./assets/limpieza.png" alt=""></a>
+          <a href="./pages/productos.html"><img class="img-categoria" src="./assets/limpieza.png" alt="icono-productos-faciales"></a>
           <h3>Productos faciales</h3>
         </div>
         <div class="categoria">
-          <a href="./pages/productos.html"><img class="img-categoria" src="./assets/leches-bebe.png" alt=""></a>
+          <a href="./pages/productos.html"><img class="img-categoria" src="./assets/leches-bebe.png" alt="icono-leches-maternizadas"></a>
           <h3>Leches maternizadas</h3>
         </div>
       </div>
@@ -129,25 +136,25 @@
     <!-- inicio descuentos -->
     <div class="contenedor-novedades">
       <div class="sub-cont-novedades">
-        <p>Hasta 30% de descuento ¡Encontra lo que buscás!</p>
-        <a href="./pages/productos.html">Pedí tu Oferta</a>
+        <p data-aos="fade-right" data-aos-duration="2000">Hasta 30% de descuento ¡Encontra lo que buscás!</p>
+        <a href="./pages/productos.html" data-aos="fade-left" data-aos-duration="2000">Pedí tu Oferta</a>
       </div>
-      <div class="img-novedades">
-        <img src="./assets/novedades-dove.jpg" alt="">
-        <img src="./assets/novedades-axe.jpg" alt="">
-        <img src="./assets/novedades-tresemme.jpg" alt="">
+      <div class="img-novedades" data-aos="fade-up" data-aos-duration="2000">
+        <img src="./assets/novedades-dove.jpg" alt="novedades-productos-dove">
+        <img src="./assets/novedades-axe.jpg" alt="novedades-productos-axe">
+        <img src="./assets/novedades-tresemme.jpg" alt="novedades-productos-tresemme">
       </div>
     </div>
     <!-- fin descuentos -->
     <!-- día del padre -->
     <div class="diaPadre">
       <div class="sub-cont-padre">
-        <p>¡Aprovechá las mejores ofertas para el día del padre!</p>
-        <a href="">Pedí tu Oferta</a>
+        <p data-aos="fade-right" data-aos-duration="3000">¡Aprovechá las mejores ofertas para el día del padre!</p>
+        <a href="" data-aos="fade-left" data-aos-duration="3000">Pedí tu Oferta</a>
       </div>
-      <div class="contenedorImgPadre">
-        <img src="./assets/dove-dia-del-padre.jpg" alt="">
-        <img src="./assets/axe-dia-del-padre.jpg" alt="">
+      <div class="contenedorImgPadre" data-aos="fade-up" data-aos-duration="3000">
+        <img class="imgDiaDelPadre" src="./assets/dove-dia-del-padre.jpg" alt="ofertas-día-del-padre-productos-dove">
+        <img class="imgDiaDelPadre" src="./assets/axe-dia-del-padre.jpg" alt="ofertas-día-del-padre-productos-padre">
       </div>
     </div>
     <!-- fin día del padre -->
@@ -155,14 +162,14 @@
     <!-- colgate -->
     <div class="contenedorOfertas">
       <div class="sub-cont-ofertas">
-        <p>Hasta 3X2 en la línea Colgate ¡Aprovechá!</p>
-        <a href="">Pedí tu Oferta</a>
+        <p data-aos="fade-right" data-aos-duration="3000">Hasta 3X2 en la línea Colgate ¡Aprovechá!</p>
+        <a href="" data-aos="fade-left" data-aos-duration="3000">Pedí tu Oferta</a>
       </div>
-      <div class="img-descuentos-colgate">
-        <img src="./assets/colgate-cepillos.jpg" alt="">
-        <img src="./assets/colgate-total12.jpg" alt="">
-        <img src="./assets/colgate-palmolive.jpg" alt="">
-        <img src="./assets/colgate-luminous.jpg" alt="">
+      <div class="img-descuentos-colgate" data-aos="fade-up" data-aos-duration="3000">
+        <img src="./assets/colgate-cepillos.jpg" alt="descuentos-colgate-cepillos">
+        <img src="./assets/colgate-total12.jpg" alt="descuentos-colgate-total-12">
+        <img src="./assets/colgate-palmolive.jpg" alt="descuentos-colgate-palmolive">
+        <img src="./assets/colgate-luminous.jpg" alt="descuentos-colgate-luminous">
       </div>
     </div>
     <!-- fin más ofertas -->
@@ -171,8 +178,8 @@
   <footer>
     <div class="contenedorFooter">
       <div class="listaFooter1">
-        <img class="logo-footer" src="./assets/logo-sec-pag.png" alt="">
-        <p class="parrafoSeguinos">Seguinos en:</p>
+        <img class="logo-footer" src="./assets/logo-sec-pag.png" alt="logo-secundario-farmaplus">
+        <p class="parrafoSeguinos">Seguínos en:</p>
         <div class="redesLista1">
           <a href="https://www.instagram.com/farmaplusfarmacia/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.facebook.com/farmaplusweb/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -192,7 +199,7 @@
       <div class="listaFooter3">
         <ul>
           <li class="tituloListaFooter">Contacto</li>
-          <li class="subTitulolistaFooter">Telefonos</li>
+          <li class="subTitulolistaFooter">Teléfonos</li>
           <li>+54 9 3534 17-5111 (Etruria)</li>
           <li>+54 9 3521 45-3975 (Laguna)</li>
           <li>+54 9 3534 76-8658 (Pasco)</li>
@@ -201,21 +208,27 @@
         </ul>
       </div>
     </div>
+    <div class="contTextoFooter">
+      <p>© 2024 - Farmaplus. Todos los derechos reservados.</p>
+    </div>
   </footer>
   <!-- fin footer -->
   <a href="" class="wsppLink">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <!-- linkeo script libreria js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- fin linkeo script libreria js -->
   <!-- linkeo script bs -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <!-- fin script bs -->
-
+  <!-- linkeo script aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- fin script aos -->
+  
 </body>
 
 </html>
