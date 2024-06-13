@@ -435,7 +435,7 @@ footer{
     p{
         color: $colorFooterHover;
         padding-top: 20px;
-        padding-right: 90px;
+        margin-right: 90px;
         font-size: 19px;
     }
     a{
@@ -502,10 +502,12 @@ footer{
         h3{
             font-family: $fuente-titulos;
             font-size: 40px;
+            padding-left: 90px;
         }
         p{
             font-size: 19px;
             padding-top: 20px;
+            padding-left: 90px;
         }
         a{
             color: $color4;
@@ -515,6 +517,7 @@ footer{
             padding: 10px;
             border-radius: 7px;
             background-color: $colorFooter;
+            margin-left: 90px;
 
             &:hover{
                 text-decoration: underline;
@@ -524,7 +527,7 @@ footer{
     .recetas{
         img{
             width: 550px;
-            margin-left: 50px;
+            margin-right: 60px;
             border-radius: 10px;
         }
     }
@@ -587,6 +590,16 @@ footer{
     .text-fijo{
         font-size: 11px;
     }
+    .nav-item{
+        .nav-link{
+            font-size: 14px;
+        }
+    }
+    .dropdown-menu{
+        .dropdown-item{
+            font-size: 14px;
+        }
+    }
     
 }
 
@@ -594,6 +607,7 @@ footer{
 @media (max-width: 1020px){
     h1{
         font-size: 20px;
+        margin-top: 22px;
     }
     .categoria{
         margin: 2px;
@@ -722,5 +736,259 @@ footer{
         box-shadow: 0 0 3px #4e4e4e;
         position: fixed;
     }
+}
 
+//productos
+@media (max-width: 1020px){
+    .contenedorEnlacesProductos{
+        height: 50px;
+        margin-top: 20px;
+        a{
+            font-size: 12px;
+            line-height: 20px;
+            padding: 4px;
+            border: 0;
+        }
+    }
+    .tituloProductos{
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .contenedorPañales{
+        .card{
+            margin-top: 25px;
+            img{
+                width: 190px;
+                margin-left: 32px;
+            }
+            .card-body{
+                .card-title{
+                    font-size: 18px;
+                }
+                .btn{
+                    font-size: 13px;
+                    padding: 5px;
+                }
+            }
+            .list-group{
+                .list-group-item{
+                    font-size: 13px;
+                }
+            }
+        }
+        
+    }
+    .contenedorLeches{
+        .card{
+            img{
+                margin-top: 15px;
+            }
+        }
+    }
+    .contenedorOrtopedia{
+        .card{
+            margin-top: 25px;
+            img{
+                width: 190px;
+                margin-left: 32px;
+                margin-top: 15px;
+            }
+            .card-body{
+                .card-title{
+                    font-size: 18px;
+                }
+                .btn{
+                    font-size: 13px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .contenedorOrtopedia{
+        .card{
+            .rodilleraBodyCare{
+                margin-left: 10px;
+            }
+        }
+    }
+    .contenedorDietetica{
+        .card{
+            .alfajorLulemuu{
+                width: 125px;
+                margin-left: 64px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .contenedorDietetica2{
+        .card{
+            img{
+                width: 105px;
+                margin-left: 75px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .contenedorSuplementos{
+        .card{
+            img{
+                margin-top: 0;
+            }
+        }
+    }
+    .contenedorSuplementos{
+        .card{
+            .infiltrexSuplemento{
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+//salud
+
+@media (max-width: 1020px){
+    .contenedorRecetas{
+        margin-top: 40px;
+        display: block;
+        border-bottom: 2px solid $colorFooter;
+        padding-bottom: 70px;
+        .textoTitulo2{
+            h3{
+                font-size: 22px;
+                text-align: center;
+                padding-left: 0;
+            }
+            p{
+                font-size: 14px;
+                padding-top: 8px;
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .enviarReceta{
+                text-align: center;
+                a{
+                    padding: 5px;
+                    border-radius: 5px;
+                    font-size: 13px;
+                    margin-left: 0;
+                }
+            }
+        }
+        .recetas{
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            img{
+                width: 250px;
+                margin-right: 0;
+            }
+        }
+    }
+    .diabetes{
+        background: none;
+        text-align: center;
+        height: 370px;
+        padding: 5px;
+        border-bottom: 2px solid $colorFooter;
+        h3{
+            color: $color4;
+            padding-top: 0;
+            font-size: 22px;
+            padding-right: 0;
+        }
+        p{
+            color: $color4;
+            padding-top: 10px;
+            font-size: 13px;
+            margin-right: 0;
+            padding-left: 1px;
+        }
+        a{
+            color: $color4;
+            background-color: $colorFooter;
+            border-radius: 5px;
+            font-size: 13px;
+            padding: 5px;
+            margin-right: 0;
+            margin-top: 10px;
+        }
+    }
+    .contenedorPlantillas{
+        display: block;
+        text-align: center;
+        .textoTitulo{
+            h3{
+                font-size: 22px;
+            }
+            p{
+                font-size: 12px;
+                padding: 10px;
+            }
+            a{
+                font-size: 13px;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+        .plantillas{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 250px;
+                margin-top: 25px;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+//sucursales
+@media (max-width: 1020px){
+    .contenedorMapas{
+        .sucursalEtruria{
+            margin-top: 10px;
+            margin-bottom: 80px;
+            .h3mapas{
+                h3{
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+            }
+            .listaMapa{
+                margin-top: 25px;
+                ul{
+                    li{
+                        font-size: 15px;
+                        i{
+                            font-size: 17px;
+                            height: 35px;
+                            width: 35px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .sucursalLaguna{
+            margin-bottom: 80px;
+            .h3mapas{
+                h3{
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        .sucursalPasco{
+            margin-bottom: 80px;
+            .h3mapas{
+                h3{
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
 }
