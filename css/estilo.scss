@@ -279,7 +279,36 @@ footer{
         padding-bottom: 15px;
         text-align: center;
         color: $colorFooter;
-        font-size: 14px;
+        font-size: 15px;
+    }
+}
+
+.contPerfil{
+    display: flex;
+    justify-content: end;
+    margin-top: 25px;
+    p{
+        color: $colorFooter;
+        margin-bottom: 3px;
+        font-size: 13px;
+        padding-top: 10px;
+        border-top: 1px solid $colorFooter;
+        width: 395px;
+        text-align: center;
+    }
+
+}
+
+.perfilRedes{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    a{
+        color: $colorFooter;
+        font-size: 17px;
+        letter-spacing: 11px;
+        padding-top: 2px;
     }
 }
 
@@ -290,7 +319,7 @@ footer{
     background-color: $color3;
     color: $colorFooterHover;
     position: fixed;
-    bottom: 55px;
+    bottom: 89px;
     right: 50px;
     line-height: 53px;
     border-radius: 50%;
@@ -678,11 +707,14 @@ footer{
     .logo-footer{
         width: 70px;
         height: 70px;
+        margin-left: 8px;
     }
     .parrafoSeguinos{
         font-size: 11px;
+        margin-left: 10px;
     }
     .redesLista1{
+        margin-left: 15px;
         a{
             font-size: 17px;
             letter-spacing: 5px;
@@ -708,19 +740,21 @@ footer{
         ul{
             li{
                 font-size: 11px;
+                margin-right: 10px;
             }
             .tituloListaFooter{
                 font-size: 14px;
+                margin-right: 10px;
             }
         }
     }
     .contTextoFooter{
         p{
-            font-size: 12px;
+            font-size: 11px;
         }
     }
     .contenedorFooter{
-        padding-bottom: 20px;
+        padding-bottom: 14px;
         margin-top: 70px;
     }
     footer{
@@ -731,10 +765,29 @@ footer{
         width: 35px;
         line-height: 35px;
         font-size: 22px;
-        bottom: 32px;
-        right: 25px;
+        bottom: 86px;
+        right: 24px;
         box-shadow: 0 0 3px #4e4e4e;
         position: fixed;
+    }
+    .contPerfil{
+        margin-top: 17px;
+        p{
+            font-size: 9px;
+            text-align: right;
+            padding-right: 11px;
+            width: 190px;
+            margin-bottom: 1px;
+        }
+    }
+    .perfilRedes{
+        margin-right: 5px;
+        padding-bottom: 15px;
+        a{
+            font-size: 14px;
+            padding-top: 1px;
+            letter-spacing: 9px;
+        }
     }
 }
 
