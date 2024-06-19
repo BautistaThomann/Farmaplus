@@ -506,6 +506,30 @@ footer {
   border-radius: 50%;
   text-align: center;
 }
+@media (max-width: 1700px) {
+  .contenedorPlantillas .textoTitulo h3 {
+    font-size: 33px;
+    padding-left: 50px;
+  }
+  .contenedorPlantillas .textoTitulo p {
+    padding-left: 50px;
+    margin-right: 10px;
+  }
+  .contenedorPlantillas .textoTitulo a {
+    margin-left: 50px;
+  }
+  .contenedorPlantillas .plantillas img {
+    width: 380px;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  .contenedorRecetas .recetas {
+    margin-left: 40px;
+  }
+  .contenedorOfertas .img-descuentos-colgate img {
+    width: 291px;
+  }
+}
 @media (max-width: 1020px) {
   .card {
     width: 12rem;
@@ -703,7 +727,7 @@ footer {
   .contenedorOrtopedia .card img, .contenedorProductosFaciales .card img, .contenedorSuplementos .card img, .contenedorSuplementos2 .card img, .contenedorAccesorios .card img {
     width: 190px;
     margin-left: 32px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .contenedorOrtopedia .card .card-body .card-title, .contenedorProductosFaciales .card .card-body .card-title, .contenedorSuplementos .card .card-body .card-title, .contenedorSuplementos2 .card .card-body .card-title, .contenedorAccesorios .card .card-body .card-title {
     font-size: 18px;
@@ -713,7 +737,7 @@ footer {
     padding: 5px;
   }
   .contenedorOrtopedia .card .rodilleraBodyCare, .contenedorProductosFaciales .card .rodilleraBodyCare, .contenedorSuplementos .card .rodilleraBodyCare, .contenedorSuplementos2 .card .rodilleraBodyCare, .contenedorAccesorios .card .rodilleraBodyCare {
-    margin-left: 10px;
+    margin-left: 25px;
   }
   .contenedorDietetica .card .alfajorLulemuu {
     width: 125px;
@@ -764,6 +788,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    margin-left: 0;
   }
   .contenedorRecetas .recetas img {
     width: 250px;
@@ -804,15 +829,18 @@ footer {
   }
   .contenedorPlantillas .textoTitulo h3 {
     font-size: 22px;
+    padding-left: 0;
   }
   .contenedorPlantillas .textoTitulo p {
     font-size: 12px;
     padding: 10px;
+    margin-right: 0;
   }
   .contenedorPlantillas .textoTitulo a {
     font-size: 13px;
     padding: 5px;
     border-radius: 5px;
+    margin-left: 0;
   }
   .contenedorPlantillas .plantillas {
     display: flex;
@@ -822,6 +850,7 @@ footer {
     width: 250px;
     margin-top: 25px;
     margin-left: 0;
+    margin-right: 0;
   }
 }
 @media (max-width: 1020px) {

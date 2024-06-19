@@ -603,6 +603,44 @@ footer{
 }
 
 //media queris
+//plantillas computarizadas
+@media (max-width: 1700px){
+    .contenedorPlantillas{
+        .textoTitulo{
+            h3{
+                font-size: 33px;
+                padding-left: 50px;
+            }
+            p{
+                padding-left: 50px;
+                margin-right: 10px;
+            }
+            a{
+                margin-left: 50px;
+            }
+        }
+        .plantillas{
+            img{
+                width: 380px;
+                margin-left: 20px;
+                margin-right: 50px;
+            }
+        }
+    }
+    .contenedorRecetas{
+        .recetas{
+            margin-left: 40px;
+        }
+    }
+    .contenedorOfertas{
+        .img-descuentos-colgate{
+            img{
+                width: 291px;
+            }
+        }
+    }
+}
+
 //productos
 @media (max-width: 1020px){
     .card{
@@ -844,7 +882,7 @@ footer{
             img{
                 width: 190px;
                 margin-left: 32px;
-                margin-top: 15px;
+                margin-top: 10px;
             }
             .card-body{
                 .card-title{
@@ -857,11 +895,10 @@ footer{
             }
         }
     }
-
     .contenedorOrtopedia{
         .card{
             .rodilleraBodyCare{
-                margin-left: 10px;
+                margin-left: 25px;
             }
         }
     }
@@ -934,6 +971,7 @@ footer{
             display: flex;
             justify-content: center;
             margin-top: 25px;
+            margin-left: 0;
             img{
                 width: 250px;
                 margin-right: 0;
@@ -975,15 +1013,18 @@ footer{
         .textoTitulo{
             h3{
                 font-size: 22px;
+                padding-left: 0;
             }
             p{
                 font-size: 12px;
                 padding: 10px;
+                margin-right: 0;
             }
             a{
                 font-size: 13px;
                 padding: 5px;
                 border-radius: 5px;
+                margin-left: 0;
             }
         }
         .plantillas{
@@ -993,6 +1034,7 @@ footer{
                 width: 250px;
                 margin-top: 25px;
                 margin-left: 0;
+                margin-right: 0;
             }
         }
     }
