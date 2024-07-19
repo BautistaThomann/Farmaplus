@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 // paleta de colores
 $color1: #264D8E;
@@ -12,8 +12,9 @@ $colorFooterHover: #fff;
 
 // fuentes
 $fuente-principal: "Inter", sans-serif;
-$fuente-titulos : "Lato", sans-serif;
-$fuente-h1: "Figtree", sans-serif;
+$fuente-titulos: "Lato", sans-serif;
+$fuente-h1: "Montserrat", sans-serif;
+
 
 *{
     margin: 0;
@@ -31,225 +32,314 @@ body{
     font-size: 14px;
     text-align: center;
     background-color: #329240;
-    font-weight: 600;
+    color: $colorFooterHover;
+    font-family: $fuente-h1;
 }
 
 .logo-principal{
-    width: 175px;
+    width: 170px;
     margin: 9px 0px 9px 50px;
 }
 
 /* navbar */
 .collapse{
-    justify-content: end;
+    justify-content: center;
 }
 
-.navbar-nav{
-    margin-right: 85px;
-    font-size: 20px;
+.navbar-collapse{
+    .navbar-nav{
+        margin-right: 105px;
+        .nav-item{
+            .nav-link{
+                color: $color4;
+                font-weight: 450;
+                font-size: 17px;
+                margin-right: 19px;
+            }
+        }
+    }
+}
+.redesNavBar{
+    display: flex;
+    margin-right: 50px;
+    a{
+        color: $color4;
+        font-size: 25px;
+        margin-right: 15px;
+    }
 }
 
-.nav-link{
-    font-size: 18px;
-    margin-right: 20px;
+/* frase h1 */
+
+.h1-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    align-items: center;
+    .logoH1{
+        width: 50px;
+        height: 50px;
+        margin-right: 35px;
+    }
+    h1{
+        text-align: center;
+        font-family: $fuente-h1;
+        font-size: 30px;
+    }
 }
 
 /* categorias */
-h1{
-    text-align: center;
-    font-family: $fuente-principal;
-    margin-top: 35px;
-    font-size: 35px;
-    font-weight: 600;
+.categoriasTitulo{
+    text-align: left;
+    font-family: $fuente-h1;
+    margin-top: 70px;
+    font-size: 27px;
+    margin-left: 311px;
+    font-weight: 500;
+}
+
+.contenedor-categorias{
+    margin-top: 25px;
 }
 
 .sub-cont-categorias1{
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.sub-cont-categorias2{
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    margin-left: 10px;
-}
-
-.categoria{
-    margin: 15px 70px 0px 70px;
-    img{
-        margin-left: 20px;
-        width: 120px;
-    }
-    h3{
-        font-size: 16px;
-        text-align: center;
-        margin-left: 15px;
-        padding-top: 8px;
-    }
-}
-
-//estilos titulos e imagenes
-
-.img-categoria2{
-    padding-left: 5px;
-}
-
-.h3-2{
-    padding-left: 7px;
-}
-
-.h3-dif-2{
-    padding-left: 20px;
-}
-
-.ortopedia{
-    padding-left: 7px;
-}
-
-.pañal{
-    padding-left: 4px;
-}
-
-/* ofertas */
-.sub-cont-novedades{
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    p{
-        margin-top: 5px;
-        margin-right: 150px;
-        font-size: 21px;
-    }
-    a{
-        margin-top: 5px;
-        margin-left: 250px;
-        font-size: 18px;
-        text-decoration: none;
-        color: $color2;
-        font-weight: 600;
-
-        &:hover{
-            text-decoration: underline;
-        }
-    }
-}
-
-.img-novedades{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    .categoria{
+        img{
+            width: 250px;
+            margin: 0px 4px 0px 4px;
+        }
+    }
+}
+
+.sub-cont-categorias2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 257px;
+    .categoria{
+        img{
+            width: 250px;
+            margin: 10px 4px 0px 4px;
+        }
+    }
+}
+
+/* categorias no visibles */
+.categoria-display-celular{
+    display: none;
+}
+
+/* banner dermo */
+.contenedorDermo{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
     img{
-        width: 325px;
-        margin: 0px 30px 20px 30px;
-        border-radius: 7px;
+        width: 1280px;
     }
 }
 
-.contenedor-novedades{
-    background-color: rgb(238, 238, 238);
-    padding: 17px;
-    margin-top: 90px;
-    box-shadow: 0 0 10px rgba(194, 194, 194, 0.616);
+/* electro salud */
+.titlElecSalud{
+    @extend .h2ProductsDestacados;
+}
+.contenedorElectroSalud{
+    @extend .contenedorDestacados;
 }
 
-/* día del padre */
-.diaPadre{
-    margin: 80px 0px 80px 0px;
-    .sub-cont-padre{
-        @extend .sub-cont-novedades;
-        margin: 0;
-    }
-    .contenedorImgPadre{
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        img{
-            width: 600px;
-            margin: 10px;
-            border-radius: 7px;
+/* salud farmacia */
+.contenedorSaludGeneral{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .contenedorSalud{
+        background-color: #f7e9df;
+        padding: 23px;
+        border-radius: 12px;
+        h3{
+            font-size: 20px;
         }
-    }
-}
-
-/* colgate */
-.contenedorOfertas{
-    @extend .contenedor-novedades;
-    padding-bottom: 40px;
-    .sub-cont-ofertas{
-        @extend .sub-cont-novedades;
         p{
-            margin-right: 650px;
-            margin-top: 5px;
+            font-size: 16px;
+            padding-top: 10px;
         }
-        a{
-            margin-left: 300px;
-            margin-top: 5px;
+        .aSalud{
+            margin-top: 193px;
+            a{
+                color: #3671b1;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 400;
+                padding: 5px;
+                border: solid 1px #3671b1;
+                border-radius: 5px;
+            }
         }
     }
-    .img-descuentos-colgate{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        img{
-            width: 350px;
-            margin: 10px;
-            border-radius: 7px;
+    .contenedorPlantRecetas{
+        margin-left: 25px;
+        .subContRecetas{
+            background-color: #f7e9df;
+            padding: 23px;
+            border-radius: 12px;
+            margin-top: 0;
+            height: 252px;
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+                padding-top: 10px;
+                margin-bottom: 45px;
+            }
+            .aRecPlant{
+                margin-top: 20px;
+                a{  
+                    color: #3671b1;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 5px;
+                    border: solid 1px #3671b1;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .subContPlantillas{
+            background-color: #f7e9df;
+            padding: 23px;
+            margin-top: 20px;
+            border-radius: 12px;
+            height: 252px;
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+                padding-top: 10px;
+            }
+            .aRecPlant{
+                margin-top: 21px;
+                a{  
+                    color: #3671b1;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 5px;
+                    border: solid 1px #3671b1;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* banner accesorios */
+
+.contenedorAccesorios{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    img{
+        width: 1281px;
+    }
+}
+
+/* productos destacados cards */
+.h2ProductsDestacados{
+    @extend .categoriasTitulo;
+    margin-top: 50px;
+}
+.contenedorDestacados{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .cardsDestacados{
+        width: 301px;
+        margin: 0px 13px 12px 13px;
+        .cardDest{
+            background-color: #cee1f4;
+            border-radius: 10px;
+            padding-bottom: 12px;
+            transition: all 0.5s;
+            
+            &:hover{
+                box-shadow: 0 0 10px $colorFooter;
+            }
+
+            img{
+                width: 100%;
+            }
+            .dataCardDest{
+                background-color: $colorFooterHover;
+                border-radius: 10px;
+                margin: 0px 12px 0px 12px;
+                padding: 10px;
+                height: 100px;
+                h3{
+                    font-size: 20px;
+                    font-family: $fuente-h1;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                .flexPa{
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        text-decoration: none;
+                        margin-top: 25px;
+                        font-size: 20px;
+                        width: 35px;
+                        height: 35px;
+                        text-align: center;
+                        line-height: 32px;
+                        color: $colorFooterHover;
+                        background-color: #f48ab6;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
     }
 }
 
 /* footer */
 .logo-footer{
-    width: 100px;
-    height: 100px;
-    filter: drop-shadow(
-        0 0 5px rgba(155, 155, 155, 0.185)
-    );
+    width: 85px;
+    height: 85px;
 }
 
 footer{
-    background-color:rgb(52, 87, 87);
-}
-
-.parrafoSeguinos{
-    color: $colorFooter;
-    margin-top: 2px;
-    margin-bottom: 4px;
+    background-color: #cee1f4;
 }
 
 .contenedorFooter{
-    border-top: 2px solid $color4;
-    margin-top: 80px;
+    margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-evenly;
     li{
         list-style: none;
-        color: $colorFooter;
+        color: $color4;
         padding: 2px;
         a{
             color: $color4;
             text-decoration: none;
-            &:hover{
-                color: $colorFooterHover;
-            }
         }
     }
 }
 
 .redesLista1{
+    margin-top: 5px;
     a{
-        color: $colorFooter;
-        font-size: 25px;
-        letter-spacing: 15px;
-
-        &:hover{
-            color: $colorFooterHover;
-        }
+        color: $color4;
+        font-size: 22px;
+        letter-spacing: 10px;
     }
 }
 
@@ -257,7 +347,7 @@ footer{
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 5px;
-    font-weight: 600;
+    font-weight: 525;
 }
 
 .subTitulolistaFooter{
@@ -268,7 +358,7 @@ footer{
 .listaFooter2{
     li{
         a{
-            color: $colorFooter;
+            color: $color4;
         }
     }
 }
@@ -278,7 +368,7 @@ footer{
         margin: 0;
         padding-bottom: 15px;
         text-align: center;
-        color: $colorFooter;
+        color: $color4;
         font-size: 15px;
     }
 }
@@ -288,11 +378,11 @@ footer{
     justify-content: end;
     margin-top: 25px;
     p{
-        color: $colorFooter;
+        color: $color4;
         margin-bottom: 3px;
         font-size: 13px;
         padding-top: 10px;
-        border-top: 1px solid $colorFooter;
+        border-top: 1px solid $color4;
         width: 395px;
         text-align: center;
     }
@@ -305,7 +395,7 @@ footer{
     margin-right: 20px;
     padding-bottom: 20px;
     a{
-        color: $colorFooter;
+        color: $color4;
         font-size: 17px;
         letter-spacing: 11px;
         padding-top: 2px;
@@ -334,60 +424,30 @@ footer{
 
 /* productos */
 .contenedorEnlacesProductos{
-    background-color: $color1;
-    text-align: center;
-    height: 38px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
     a{
-        color: $colorFooterHover;
-        text-decoration: none;
-        padding: 9px;
-        font-size: 16px;
-        text-transform: uppercase;
-        line-height: 38px;
-        border-right: 3px solid $color4;
-    }
-    .aDif{
-        border: none;
-    }
-}
-
-//link más info cards
-.btn{
-    padding: 7px;
-    margin-top: 5px;
-    &:hover{
-        text-decoration: underline;
+        img{
+            width: 206px;
+            margin: 4px;
+        }
     }
 }
 
 //titulo pañales
 .tituloProductos{
-    margin-top: 35px;
-    text-align: center;
-    background-color: $colorFooter;
-    font-size: 16px;
-    color: $color4;
-    height: 25px;
-    line-height: 25px;
-    scroll-margin-top: 35px;
+    margin-top: 40px;
+    font-family: $fuente-h1;
+    font-size: 26px;
+    margin-left: 312px;
+    font-weight: 550;
+    scroll-margin-top: 40px; 
 }
-
 //card pañales
 .contenedorPañales{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    margin-bottom: 40px;
-    .card{
-        margin: 25px;
-        .card-title{
-            font-size: 22px;
-        }
-        .list-group-item{
-            font-size: 15px;
-        }
-    }
+    @extend .contenedorDestacados;
 }
 
 //leches
@@ -401,51 +461,39 @@ footer{
 }
 
 .contenedorDietetica2{
-    @extend .contenedorPañales;
-    .card-img-top{
-        width: 140px;
-        margin-left: 72px;
-    }
+    @extend .contenedorDietetica;
+    margin-top: 20px;
 }
-
 
 //ortopedia
 .contenedorOrtopedia{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 40px;
-    .card{
-        margin: 25px;
-        .card-title{
-            font-size: 22px;
-        }
-    }
+    @extend .contenedorPañales;
+}
+
+.imgBodyCare{
+    border-radius: 10px;
 }
 
 //productos faciales
 .contenedorProductosFaciales{
-    @extend .contenedorOrtopedia;
+    @extend .contenedorPañales;
 }
 
 //suplementos
 .contenedorSuplementos{
-    @extend .contenedorOrtopedia;
+    @extend .contenedorPañales;
 }
 
 .contenedorSuplementos2{
-    @extend .contenedorOrtopedia;
-}
-
-//accesorios
-.contenedorAccesorios{
-    @extend .contenedorOrtopedia;
+    @extend .contenedorPañales;
+    margin-top: 20px;
 }
 
 /* salud */
 /* diabetes */
 .diabetes{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 700px;
     background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)),
@@ -454,110 +502,133 @@ footer{
     background-size: cover;
     background-attachment: fixed;
     text-align: right;
-    h3{
-        color: $colorFooterHover;
-        padding-top: 100px;
-        padding-right: 90px;
-        font-size: 40px;
-        font-family: $fuente-titulos;
-    }
-    p{
-        color: $colorFooterHover;
-        padding-top: 20px;
-        margin-right: 90px;
-        font-size: 19px;
-    }
-    a{
-        color: $colorFooterHover;
-        text-decoration: none;
-        margin-top: 15px;
-        margin-right: 90px;
-        font-size: 18px;
-        padding: 10px;
-        border-radius: 7px;
-        background-color: #5e84c5;
-
-        &:hover{
-            text-decoration: underline;
+    .subContDiabetes{
+        width: 1300px;
+        h3{
+            color: $colorFooterHover;
+            padding-top: 90px;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: $fuente-h1;
+        }
+        p{
+            color: $colorFooterHover;
+            font-size: 19px;
+        }
+        a{
+            color: $colorFooterHover;
+            text-decoration: none;
+            margin-top: 15px;
+            font-size: 18px;
+            padding: 7px;
+            border-radius: 7px;
+            background-color: #f48ab6;
         }
     }
 }
 
-//plantillas
+/* plantillas */
 .contenedorPlantillas{
     display: flex;
     justify-content: center;
-    margin-top: 85px;
-    margin-bottom: 90px;
+    padding-top: 100px;
+    width: 1300px;
+    margin: 0 auto;
     .textoTitulo{
+        margin-right: 212px;
         h3{
-            font-family: $fuente-titulos;
-            font-size: 40px;
+            font-family: $fuente-h1;
+            font-size: 35px;
+            font-weight: 600;
         }
         p{
             font-size: 19px;
-            padding-top: 20px;
         }
         a{
-            color: $color4;
+            color: $colorFooterHover;
             text-decoration: none;
             margin-top: 15px;
             font-size: 18px;
-            padding: 10px;
+            padding: 7px;
             border-radius: 7px;
-            background-color: $colorFooter;
-
-            &:hover{
-                text-decoration: underline;
-            }
+            background-color: #f48ab6;
         }
     }
     .plantillas{
         img{
             width: 460px;
-            margin-left: 50px;
             border-radius: 10px;
         }
     }
 }
 
-//recetas
+/* recetas */
 .contenedorRecetas{
     display: flex;
-    justify-content: center;
-    margin-top: 85px;
-    margin-bottom: 110px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 1300px;
+    margin-bottom: 100px;
     .textoTitulo2{
         h3{
-            font-family: $fuente-titulos;
-            font-size: 40px;
-            padding-left: 90px;
+            font-family: $fuente-h1;
+            font-size: 35px;
+            font-weight: 600;
         }
         p{
             font-size: 19px;
-            padding-top: 20px;
-            padding-left: 90px;
         }
         a{
-            color: $color4;
+            color: $colorFooterHover;
             text-decoration: none;
-            margin-top: 15px;
             font-size: 18px;
-            padding: 10px;
+            padding: 7px;
             border-radius: 7px;
-            background-color: $colorFooter;
-            margin-left: 90px;
-
-            &:hover{
-                text-decoration: underline;
-            }
+            background-color: #f48ab6;
         }
     }
     .recetas{
         img{
             width: 550px;
-            margin-right: 60px;
             border-radius: 10px;
+        }
+    }
+}
+
+/* alquiler ortopedico */
+.contenedorAlquilerOrtopedico{
+    background: linear-gradient(rgba(5, 7, 12, 0.534), rgba(5, 7, 12, 0.534)),
+    url(../assets/importancia-rehabilitacion-despues-cirugia-ortopedica-2.jpg) ;
+    width: 100%;
+    height: 700px;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: right;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .subContAlquilerOrtope{
+        width: 1300px;
+        margin: 0 auto;
+        h3{
+            font-family: $fuente-h1;
+            font-size: 35px;
+            font-weight: 600;
+            color: $colorFooterHover;
+            padding-top: 90px;
+        }
+        p{
+            font-size: 19px;
+            color: $colorFooterHover;
+        }
+        a{
+            color: $colorFooterHover;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 7px;
+            border-radius: 7px;
+            background-color: #f48ab6;
         }
     }
 }
@@ -567,13 +638,13 @@ footer{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 55px;
+    margin-top: 60px;
     .sucursalEtruria{
         .h3mapas{
             font-size: 25px;
             text-align: center;
             margin-bottom: 13px;
-            font-family: $fuente-titulos;
+            font-family: $fuente-h1;
         }
         .listaMapa{
             li{
@@ -602,153 +673,464 @@ footer{
     }
 }
 
-//media queris
-//plantillas computarizadas
-@media (max-width: 1700px){
-    .contenedorPlantillas{
-        .textoTitulo{
-            h3{
-                font-size: 33px;
-                padding-left: 50px;
-            }
-            p{
-                padding-left: 50px;
+/* convenios y obras sociales */
+.h2Convenios{
+    font-family: $fuente-h1;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 2px;
+}
+
+.contenedorConveniosObrasSos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .subcontCaja1{
+        display: flex;
+        justify-content: center;
+        background-color: #cee1f4;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        border-radius: 10px;
+        width: 380px;
+        height: 130px;
+        margin: 10px;
+        .imgLink{
+            text-decoration: none;
+            display: flex;
+            img{
+                width: 250px;
+                height: 67px;
                 margin-right: 10px;
             }
-            a{
-                margin-left: 50px;
-            }
         }
-        .plantillas{
-            img{
-                width: 380px;
-                margin-left: 20px;
-                margin-right: 50px;
-            }
-        }
-    }
-    .contenedorRecetas{
-        .recetas{
-            margin-left: 40px;
-        }
-    }
-    .contenedorOfertas{
-        .img-descuentos-colgate{
-            img{
-                width: 291px;
-            }
+        p{
+            color: $colorFooterHover;
+            background-color: #f48ab6;
+            height: 35px;
+            width: 35px;
+            line-height: 32px;
+            text-align: center;
+            border-radius: 50%;
+            margin-top: 40px;
+            margin-left: 12px;
         }
     }
 }
 
-//productos
+/* media queris */
+//titulos home
+@media (max-width: 1700px){
+    .categoriasTitulo{
+        margin-left: 155px;
+    }
+}
+
+//salud
 @media (max-width: 1020px){
-    .card{
-        width: 12rem;
+    .contenedorRecetas{
+        display: block;
+        width: 385px;
+        margin-top: 60px;
+        margin-bottom: 0px;
+        .textoTitulo2{
+            h3{
+                text-align: center;
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+                text-align: center;
+                margin: 0px;
+            }
+            .enviarReceta{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                a{
+                    padding: 4px;
+                    font-size: 12px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .recetas{
+            margin-top: 17px;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 250px;
+            }
+        }
+    }
+    .diabetes{
+        display: block;
+        background: none;
+        margin-top: 60px;
+        height: 0px;
+        text-align: center;
+        .subContDiabetes{
+            margin-bottom: 60px;
+            width: 385px;
+            height: 160px;
+            h3{
+                padding: 0;
+                margin-top: 50px;
+                text-align: center;
+                font-size: 18px;
+                color: $color4;
+            }
+            p{
+                font-size: 11px;
+                text-align: center;
+                margin: 0px;
+                color: $color4;
+            }
+            .recetas{
+                margin-top: 10px;
+                a{
+                    padding: 4px;
+                    font-size: 12px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .contenedorPlantillas{
+        display: block;
+        padding: 0px;
+        width: 385px;
+        .textoTitulo{
+            margin-right: 0px;
+            margin-top: 208px;
+            h3{
+                font-size: 18px;
+                text-align: center;
+            }
+            p{
+                font-size: 12px;
+                text-align: center;
+                margin: 0px;
+            }
+            .recetas{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                a{
+                    margin-top: 0px;
+                    padding: 4px;
+                    font-size: 12px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .plantillas{
+            margin-top: 17px;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 250px;
+            }
+        }
+    }
+    .contenedorAlquilerOrtopedico{
+        background: none;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        height: 150px;
+        .subContAlquilerOrtope{
+            width: 385px;
+            h3{
+                color: $color4;
+                text-align: center;
+                font-size: 18px;
+                padding: 0px;
+            }
+            p{
+                color: $color4;
+                font-size: 12px;
+                text-align: center;
+                margin: 0px;
+            }
+            .recetas{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                a{
+                    margin-top: 0px;
+                    padding: 4px;
+                    font-size: 12px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+            }
+        }
     }
 }
 
 //navbar
 @media (max-width: 1020px){
+    .text-fijo{
+        font-size: 11px;
+    }
     .logo-principal{
         width: 115px;
         margin-left: 5px;
     }
-    .text-fijo{
-        font-size: 11px;
-    }
-    .nav-item{
-        .nav-link{
-            font-size: 14px;
+    .navbar-collapse{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    margin-right: 10px;
+                    font-size: 13px;
+                }
+            }
         }
     }
-    .dropdown-menu{
-        .dropdown-item{
-            font-size: 14px;
+    .redesNavBar{
+        a{
+            display: none;
         }
     }
-    
+    .navbar-toggler{
+        padding: .30rem .50rem;
+        font-size: 16px;
+        .navbar-toggler-icon{
+            width: 25px;
+        }
+    }
+}
+
+//carrusel 
+.carousel-control-prev-icon{
+    width: 20px;
+}
+.carousel-control-next-icon{
+    width: 20px;
+}
+
+#carouselExampleIndicators{
+    .carousel-indicators{
+        button{
+            width: 20px;
+            height: 2px;
+            border: 0;
+        }
+    }
 }
 
 //inicio
 @media (max-width: 1020px){
-    h1{
-        font-size: 20px;
-        margin-top: 22px;
-    }
-    .categoria{
-        margin: 2px;
-        a{
-            img{
-                width: 60px;
+    .contenedorHome{
+        .h1-icon{
+            display: block;
+            margin-top: 25px;
+            h1{
+                font-size: 15px;
+                margin-top: 13px;
+            }
+            .contLogoH1{
+                display: flex;
+                justify-content: center;
+                .logoH1{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 0px;
+                }
             }
         }
-        h3{
-            font-size: 9px;
-        }
     }
-    .sub-cont-categorias1{
-        margin-right: 25px;
-        margin-left: 5px;
-    }
-    .sub-cont-categorias2{
-        margin-right: 30px;
-        h3{
-            margin-left: 17px;
-        }
-        .h3Leches{
-            margin-right: 7px;
-        }
-    }
-    .contenedor-novedades{
-        margin-top: 40px;
-    }
-    .sub-cont-novedades{
-        margin-bottom: 10px;
-        p{
+    
+    .contenedor-categorias{
+        .categoriasTitulo{
+            margin-left: 14px;
+            margin-top: 30px;
             font-size: 13px;
-            margin-right: 40px;
+            margin-bottom: 2px;
         }
-        a{
-            font-size: 11px;
-            margin-left: 30px;
+        .sub-cont-categorias1{
+            margin-top: 2px;
+            .categoria{
+                margin: 2px;
+                img{
+                    margin: 0px;
+                    width: 120px;
+                }
+            }
+        }
+        .sub-cont-categorias2{
+            display: none;
+            .categoria{
+                margin: 1px;
+                img{
+                    margin: 0px;
+                    width: 120px;
+                }
+            }
+        }
+        .categoria-display-celular{
+            display: flex;
+            margin: 2px;
+            img{
+                width: 120px;
+            }
         }
     }
-    .img-novedades{
+
+    .contenedorDermo{
+        margin-top: 30px;
         img{
-            width: 150px;
-            margin: 0px 12px 10px 12px;
+            padding: 0px 12px 0px 12px;
         }
     }
-    .sub-cont-padre{
-        margin-bottom: 0;
-        p{
-            margin-left: 18px;
-        }
-        a{
-            margin-right: 10px;
+
+    .contenedorAccesorios{
+        margin-top: 30px;
+        img{
+            padding: 0px 13px 0px 13px;
         }
     }
-    .diaPadre{
-        margin-bottom: 60px;
-        margin-top: 60px;
-        .contenedorImgPadre{
-            margin-top: 0;
-            img{
-                width: 300px;
+
+    .titlElecSalud{
+        margin-left: 14px;
+        margin-top: 30px;
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
+    .contenedorElectroSalud{
+        .cardsDestacados{
+            width: 177px;
+            margin: 5px 5px 10px 5px;
+            .cardDest{
+                .dataCardDest{
+                    height: 60px;
+                    width: 160px;
+                    margin: 0px 10px 0px 10px;
+                    h3{
+                        font-size: 11px;
+                    }
+                    .flexPa{
+                        p{
+                            font-size: 10px;
+                        }
+                        a{
+                            font-size: 12px;
+                            height: 19px;
+                            width: 19px;
+                            line-height: 17px;
+                            margin-top: 10px;
+                        }
+                        .nebUltra-A{
+                            margin-top: 5px;
+                        }
+                    }
+                }
             }
         }
     }
-    .contenedorOfertas{
-        .img-descuentos-colgate{
-            img{
-                width: 150px;
+
+    .contenedorSaludGeneral{
+        margin-top: 30px;
+        .contenedorSalud{
+            padding: 20px;
+            height: 289px;
+            h3{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+                padding-top: 5px;
+                margin-bottom: 5px;
+            }
+            .aSalud{
+                margin-top: 40px;
+                a{
+                    font-size: 12px;
+                }
             }
         }
-        .sub-cont-ofertas{
-            margin-left: 32px;
+        .contenedorPlantRecetas{
+            margin: 13px 13px 0px 13px;
+            .subContRecetas{
+                padding: 20px;
+                height: 289px;
+                h3{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 12px;
+                    padding-top: 5px;
+                    margin-bottom: 5px;
+                }
+                .aRecPlant{
+                    margin-top: 50px;
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .subContPlantillas{
+                margin-top: 13px;
+                padding: 20px;
+                height: 289px;
+                h3{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 12px;
+                    padding-top: 5px;
+                    margin-bottom: 5px;
+                }
+                .aRecPlant{
+                    margin-top: 14px;
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
         }
     }
+
+    .h2ProductsDestacados{
+        margin-left: 14px;
+        margin-top: 30px;
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+    .contenedorDestacados{
+        .cardsDestacados{
+            width: 177px;
+            margin: 5px;
+            .cardDest{
+                .dataCardDest{
+                    height: 60px;
+                    width: 160px;
+                    margin: 0px 10px 0px 10px;
+                    h3{
+                        font-size: 11px;
+                    }
+                    .flexPa{
+                        p{
+                            font-size: 10px;
+                        }
+                        a{
+                            font-size: 12px;
+                            height: 19px;
+                            width: 19px;
+                            line-height: 17px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .logo-footer{
         width: 70px;
         height: 70px;
@@ -800,7 +1182,7 @@ footer{
     }
     .contenedorFooter{
         padding-bottom: 14px;
-        margin-top: 70px;
+        margin-top: 30px;
     }
     footer{
         text-align: center;
@@ -808,8 +1190,8 @@ footer{
     .wsppLink{
         height: 35px;
         width: 35px;
-        line-height: 35px;
-        font-size: 22px;
+        line-height: 36px;
+        font-size: 21px;
         bottom: 80px;
         right: 14px;
         box-shadow: 0 0 3px #4e4e4e;
@@ -839,209 +1221,48 @@ footer{
 //productos
 @media (max-width: 1020px){
     .contenedorEnlacesProductos{
-        height: 50px;
-        margin-top: 20px;
+        margin-top: 30px;
         a{
-            font-size: 12px;
-            line-height: 20px;
-            padding: 4px;
-            border: 0;
+            img{
+                width: 115px;
+            }
         }
     }
     .tituloProductos{
-        font-size: 15px;
-        margin-top: 25px;
+        font-size: 13px;
+        margin: 30px 0px 2px 14px;
+        scroll-margin-top: 30px;
     }
-    .contenedorPañales{
-        .card{
-            margin-top: 25px;
-            img{
-                width: 190px;
-                margin-left: 32px;
-            }
-            .card-body{
-                .card-title{
-                    font-size: 18px;
-                }
-                .btn{
-                    font-size: 13px;
-                    padding: 5px;
-                }
-            }
-            .list-group{
-                .list-group-item{
-                    font-size: 13px;
-                }
-            }
-        }
-        
-    }
-    .contenedorLeches{
-        .card{
-            img{
-                margin-top: 15px;
-            }
-        }
-    }
-    .contenedorOrtopedia{
-        .card{
-            margin-top: 25px;
-            img{
-                width: 190px;
-                margin-left: 32px;
-                margin-top: 10px;
-            }
-            .card-body{
-                .card-title{
-                    font-size: 18px;
-                }
-                .btn{
-                    font-size: 13px;
-                    padding: 5px;
-                }
-            }
-        }
-    }
-    .contenedorOrtopedia{
-        .card{
-            .rodilleraBodyCare{
-                margin-left: 25px;
-            }
-        }
-    }
-    .contenedorDietetica{
-        .card{
-            .alfajorLulemuu{
-                width: 125px;
-                margin-left: 64px;
-                margin-top: 10px;
-            }
-        }
+    .contenedorSuplementos2{
+        margin: 0px;
     }
     .contenedorDietetica2{
-        .card{
-            img{
-                width: 105px;
-                margin-left: 75px;
-                margin-top: 10px;
-            }
-        }
-    }
-    .contenedorSuplementos{
-        .card{
-            img{
-                margin-top: 0;
-            }
-        }
-    }
-    .contenedorSuplementos{
-        .card{
-            .infiltrexSuplemento{
-                margin-top: 15px;
-            }
-        }
+        margin: 0px;
     }
 }
 
-//salud
-
+//convenios
 @media (max-width: 1020px){
-    .contenedorRecetas{
-        margin-top: 40px;
-        display: block;
-        border-bottom: 2px solid $colorFooter;
-        padding-bottom: 70px;
-        .textoTitulo2{
-            h3{
-                font-size: 22px;
-                text-align: center;
-                padding-left: 0;
-            }
-            p{
-                font-size: 14px;
-                padding-top: 8px;
-                text-align: center;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            .enviarReceta{
-                text-align: center;
-                a{
-                    padding: 5px;
-                    border-radius: 5px;
-                    font-size: 13px;
-                    margin-left: 0;
+    .h2Convenios{
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .contenedorConveniosObrasSos{
+        .subcontCaja1{
+            align-items: center;
+            width: 320px;
+            height: 100px;
+            padding: 20px;
+            .imgLink{
+                img{
+                    width: 205px;
+                    height: 57px;
+                    margin-right: 0px;
                 }
             }
-        }
-        .recetas{
-            display: flex;
-            justify-content: center;
-            margin-top: 25px;
-            margin-left: 0;
-            img{
-                width: 250px;
-                margin-right: 0;
-            }
-        }
-    }
-    .diabetes{
-        background: none;
-        text-align: center;
-        height: 370px;
-        padding: 5px;
-        border-bottom: 2px solid $colorFooter;
-        h3{
-            color: $color4;
-            padding-top: 0;
-            font-size: 22px;
-            padding-right: 0;
-        }
-        p{
-            color: $color4;
-            padding-top: 10px;
-            font-size: 13px;
-            margin-right: 0;
-            padding-left: 1px;
-        }
-        a{
-            color: $color4;
-            background-color: $colorFooter;
-            border-radius: 5px;
-            font-size: 13px;
-            padding: 5px;
-            margin-right: 0;
-            margin-top: 10px;
-        }
-    }
-    .contenedorPlantillas{
-        display: block;
-        text-align: center;
-        .textoTitulo{
-            h3{
-                font-size: 22px;
-                padding-left: 0;
-            }
             p{
-                font-size: 12px;
-                padding: 10px;
-                margin-right: 0;
-            }
-            a{
-                font-size: 13px;
-                padding: 5px;
-                border-radius: 5px;
-                margin-left: 0;
-            }
-        }
-        .plantillas{
-            display: flex;
-            justify-content: center;
-            img{
-                width: 250px;
-                margin-top: 25px;
-                margin-left: 0;
-                margin-right: 0;
+                display: none;
             }
         }
     }
@@ -1051,8 +1272,7 @@ footer{
 @media (max-width: 1020px){
     .contenedorMapas{
         .sucursalEtruria{
-            margin-top: 10px;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             .h3mapas{
                 h3{
                     font-size: 20px;
@@ -1075,7 +1295,7 @@ footer{
             }
         }
         .sucursalLaguna{
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             .h3mapas{
                 h3{
                     font-size: 20px;
@@ -1084,7 +1304,7 @@ footer{
             }
         }
         .sucursalPasco{
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             .h3mapas{
                 h3{
                     font-size: 20px;

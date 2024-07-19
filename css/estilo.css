@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,188 +18,275 @@ body {
   font-size: 14px;
   text-align: center;
   background-color: #329240;
-  font-weight: 600;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo-principal {
-  width: 175px;
+  width: 170px;
   margin: 9px 0px 9px 50px;
 }
 
 /* navbar */
 .collapse {
-  justify-content: end;
+  justify-content: center;
 }
 
-.navbar-nav {
-  margin-right: 85px;
-  font-size: 20px;
+.navbar-collapse .navbar-nav {
+  margin-right: 105px;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #000;
+  font-weight: 450;
+  font-size: 17px;
+  margin-right: 19px;
 }
 
-.nav-link {
-  font-size: 18px;
-  margin-right: 20px;
+.redesNavBar {
+  display: flex;
+  margin-right: 50px;
+}
+.redesNavBar a {
+  color: #000;
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+/* frase h1 */
+.h1-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  align-items: center;
+}
+.h1-icon .logoH1 {
+  width: 50px;
+  height: 50px;
+  margin-right: 35px;
+}
+.h1-icon h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
 }
 
 /* categorias */
-h1 {
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  margin-top: 35px;
-  font-size: 35px;
-  font-weight: 600;
+.categoriasTitulo, .h2ProductsDestacados, .titlElecSalud {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 70px;
+  font-size: 27px;
+  margin-left: 311px;
+  font-weight: 500;
+}
+
+.contenedor-categorias {
+  margin-top: 25px;
 }
 
 .sub-cont-categorias1 {
-  margin-top: 25px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.sub-cont-categorias1 .categoria img {
+  width: 250px;
+  margin: 0px 4px 0px 4px;
 }
 
 .sub-cont-categorias2 {
-  margin-top: 25px;
   display: flex;
   justify-content: center;
-  margin-left: 10px;
+  flex-wrap: wrap;
+  margin-right: 257px;
+}
+.sub-cont-categorias2 .categoria img {
+  width: 250px;
+  margin: 10px 4px 0px 4px;
 }
 
-.categoria {
-  margin: 15px 70px 0px 70px;
-}
-.categoria img {
-  margin-left: 20px;
-  width: 120px;
-}
-.categoria h3 {
-  font-size: 16px;
-  text-align: center;
-  margin-left: 15px;
-  padding-top: 8px;
+/* categorias no visibles */
+.categoria-display-celular {
+  display: none;
 }
 
-.img-categoria2 {
-  padding-left: 5px;
-}
-
-.h3-2 {
-  padding-left: 7px;
-}
-
-.h3-dif-2 {
-  padding-left: 20px;
-}
-
-.ortopedia {
-  padding-left: 7px;
-}
-
-.pañal {
-  padding-left: 4px;
-}
-
-/* ofertas */
-.sub-cont-novedades, .contenedorOfertas .sub-cont-ofertas, .diaPadre .sub-cont-padre {
-  margin: 20px;
+/* banner dermo */
+.contenedorDermo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 50px;
 }
-.sub-cont-novedades p, .contenedorOfertas .sub-cont-ofertas p, .diaPadre .sub-cont-padre p {
-  margin-top: 5px;
-  margin-right: 150px;
-  font-size: 21px;
-}
-.sub-cont-novedades a, .contenedorOfertas .sub-cont-ofertas a, .diaPadre .sub-cont-padre a {
-  margin-top: 5px;
-  margin-left: 250px;
-  font-size: 18px;
-  text-decoration: none;
-  color: #37B34A;
-  font-weight: 600;
-}
-.sub-cont-novedades a:hover, .contenedorOfertas .sub-cont-ofertas a:hover, .diaPadre .sub-cont-padre a:hover {
-  text-decoration: underline;
+.contenedorDermo img {
+  width: 1280px;
 }
 
-.img-novedades {
+/* electro salud */
+/* salud farmacia */
+.contenedorSaludGeneral {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.img-novedades img {
-  width: 325px;
-  margin: 0px 30px 20px 30px;
-  border-radius: 7px;
+.contenedorSaludGeneral .contenedorSalud {
+  background-color: #f7e9df;
+  padding: 23px;
+  border-radius: 12px;
+}
+.contenedorSaludGeneral .contenedorSalud h3 {
+  font-size: 20px;
+}
+.contenedorSaludGeneral .contenedorSalud p {
+  font-size: 16px;
+  padding-top: 10px;
+}
+.contenedorSaludGeneral .contenedorSalud .aSalud {
+  margin-top: 193px;
+}
+.contenedorSaludGeneral .contenedorSalud .aSalud a {
+  color: #3671b1;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+  border: solid 1px #3671b1;
+  border-radius: 5px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas {
+  margin-left: 25px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas {
+  background-color: #f7e9df;
+  padding: 23px;
+  border-radius: 12px;
+  margin-top: 0;
+  height: 252px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas h3 {
+  font-size: 20px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas p {
+  font-size: 16px;
+  padding-top: 10px;
+  margin-bottom: 45px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas .aRecPlant {
+  margin-top: 20px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas .aRecPlant a {
+  color: #3671b1;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+  border: solid 1px #3671b1;
+  border-radius: 5px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas {
+  background-color: #f7e9df;
+  padding: 23px;
+  margin-top: 20px;
+  border-radius: 12px;
+  height: 252px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas h3 {
+  font-size: 20px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas p {
+  font-size: 16px;
+  padding-top: 10px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas .aRecPlant {
+  margin-top: 21px;
+}
+.contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas .aRecPlant a {
+  color: #3671b1;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+  border: solid 1px #3671b1;
+  border-radius: 5px;
 }
 
-.contenedor-novedades, .contenedorOfertas {
-  background-color: rgb(238, 238, 238);
-  padding: 17px;
-  margin-top: 90px;
-  box-shadow: 0 0 10px rgba(194, 194, 194, 0.616);
+/* banner accesorios */
+.contenedorAccesorios {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.contenedorAccesorios img {
+  width: 1281px;
 }
 
-/* día del padre */
-.diaPadre {
-  margin: 80px 0px 80px 0px;
+/* productos destacados cards */
+.h2ProductsDestacados, .titlElecSalud {
+  margin-top: 50px;
 }
-.diaPadre .sub-cont-padre {
+
+.contenedorDestacados, .contenedorPañales, .contenedorSuplementos2, .contenedorSuplementos, .contenedorProductosFaciales, .contenedorOrtopedia, .contenedorDietetica, .contenedorDietetica2, .contenedorLeches, .contenedorElectroSalud {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contenedorDestacados .cardsDestacados, .contenedorPañales .cardsDestacados, .contenedorSuplementos2 .cardsDestacados, .contenedorSuplementos .cardsDestacados, .contenedorProductosFaciales .cardsDestacados, .contenedorOrtopedia .cardsDestacados, .contenedorDietetica .cardsDestacados, .contenedorDietetica2 .cardsDestacados, .contenedorLeches .cardsDestacados, .contenedorElectroSalud .cardsDestacados {
+  width: 301px;
+  margin: 0px 13px 12px 13px;
+}
+.contenedorDestacados .cardsDestacados .cardDest, .contenedorPañales .cardsDestacados .cardDest, .contenedorSuplementos2 .cardsDestacados .cardDest, .contenedorSuplementos .cardsDestacados .cardDest, .contenedorProductosFaciales .cardsDestacados .cardDest, .contenedorOrtopedia .cardsDestacados .cardDest, .contenedorDietetica .cardsDestacados .cardDest, .contenedorDietetica2 .cardsDestacados .cardDest, .contenedorLeches .cardsDestacados .cardDest, .contenedorElectroSalud .cardsDestacados .cardDest {
+  background-color: #cee1f4;
+  border-radius: 10px;
+  padding-bottom: 12px;
+  transition: all 0.5s;
+}
+.contenedorDestacados .cardsDestacados .cardDest:hover, .contenedorPañales .cardsDestacados .cardDest:hover, .contenedorSuplementos2 .cardsDestacados .cardDest:hover, .contenedorSuplementos .cardsDestacados .cardDest:hover, .contenedorProductosFaciales .cardsDestacados .cardDest:hover, .contenedorOrtopedia .cardsDestacados .cardDest:hover, .contenedorDietetica .cardsDestacados .cardDest:hover, .contenedorDietetica2 .cardsDestacados .cardDest:hover, .contenedorLeches .cardsDestacados .cardDest:hover, .contenedorElectroSalud .cardsDestacados .cardDest:hover {
+  box-shadow: 0 0 10px #cccccc;
+}
+.contenedorDestacados .cardsDestacados .cardDest img, .contenedorPañales .cardsDestacados .cardDest img, .contenedorSuplementos2 .cardsDestacados .cardDest img, .contenedorSuplementos .cardsDestacados .cardDest img, .contenedorProductosFaciales .cardsDestacados .cardDest img, .contenedorOrtopedia .cardsDestacados .cardDest img, .contenedorDietetica .cardsDestacados .cardDest img, .contenedorDietetica2 .cardsDestacados .cardDest img, .contenedorLeches .cardsDestacados .cardDest img, .contenedorElectroSalud .cardsDestacados .cardDest img {
+  width: 100%;
+}
+.contenedorDestacados .cardsDestacados .cardDest .dataCardDest, .contenedorPañales .cardsDestacados .cardDest .dataCardDest, .contenedorSuplementos2 .cardsDestacados .cardDest .dataCardDest, .contenedorSuplementos .cardsDestacados .cardDest .dataCardDest, .contenedorProductosFaciales .cardsDestacados .cardDest .dataCardDest, .contenedorOrtopedia .cardsDestacados .cardDest .dataCardDest, .contenedorDietetica .cardsDestacados .cardDest .dataCardDest, .contenedorDietetica2 .cardsDestacados .cardDest .dataCardDest, .contenedorLeches .cardsDestacados .cardDest .dataCardDest, .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0px 12px 0px 12px;
+  padding: 10px;
+  height: 100px;
+}
+.contenedorDestacados .cardsDestacados .cardDest .dataCardDest h3, .contenedorPañales .cardsDestacados .cardDest .dataCardDest h3, .contenedorSuplementos2 .cardsDestacados .cardDest .dataCardDest h3, .contenedorSuplementos .cardsDestacados .cardDest .dataCardDest h3, .contenedorProductosFaciales .cardsDestacados .cardDest .dataCardDest h3, .contenedorOrtopedia .cardsDestacados .cardDest .dataCardDest h3, .contenedorDietetica .cardsDestacados .cardDest .dataCardDest h3, .contenedorDietetica2 .cardsDestacados .cardDest .dataCardDest h3, .contenedorLeches .cardsDestacados .cardDest .dataCardDest h3, .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest h3 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   margin: 0;
 }
-.diaPadre .contenedorImgPadre {
-  margin-top: 10px;
+.contenedorDestacados .cardsDestacados .cardDest .dataCardDest .flexPa, .contenedorPañales .cardsDestacados .cardDest .dataCardDest .flexPa, .contenedorSuplementos2 .cardsDestacados .cardDest .dataCardDest .flexPa, .contenedorSuplementos .cardsDestacados .cardDest .dataCardDest .flexPa, .contenedorProductosFaciales .cardsDestacados .cardDest .dataCardDest .flexPa, .contenedorOrtopedia .cardsDestacados .cardDest .dataCardDest .flexPa, .contenedorDietetica .cardsDestacados .cardDest .dataCardDest .flexPa, .contenedorDietetica2 .cardsDestacados .cardDest .dataCardDest .flexPa, .contenedorLeches .cardsDestacados .cardDest .dataCardDest .flexPa, .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest .flexPa {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.diaPadre .contenedorImgPadre img {
-  width: 600px;
-  margin: 10px;
-  border-radius: 7px;
-}
-
-/* colgate */
-.contenedorOfertas {
-  padding-bottom: 40px;
-}
-.contenedorOfertas .sub-cont-ofertas p {
-  margin-right: 650px;
-  margin-top: 5px;
-}
-.contenedorOfertas .sub-cont-ofertas a {
-  margin-left: 300px;
-  margin-top: 5px;
-}
-.contenedorOfertas .img-descuentos-colgate {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.contenedorOfertas .img-descuentos-colgate img {
-  width: 350px;
-  margin: 10px;
-  border-radius: 7px;
+.contenedorDestacados .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorPañales .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorSuplementos2 .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorSuplementos .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorProductosFaciales .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorOrtopedia .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorDietetica .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorDietetica2 .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorLeches .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest .flexPa a {
+  text-decoration: none;
+  margin-top: 25px;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  background-color: #f48ab6;
+  border-radius: 50%;
 }
 
 /* footer */
 .logo-footer {
-  width: 100px;
-  height: 100px;
-  filter: drop-shadow(0 0 5px rgba(155, 155, 155, 0.185));
+  width: 85px;
+  height: 85px;
 }
 
 footer {
-  background-color: rgb(52, 87, 87);
-}
-
-.parrafoSeguinos {
-  color: #cccccc;
-  margin-top: 2px;
-  margin-bottom: 4px;
+  background-color: #cee1f4;
 }
 
 .contenedorFooter {
-  border-top: 2px solid #000;
-  margin-top: 80px;
+  margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 30px;
   display: flex;
@@ -207,31 +294,28 @@ footer {
 }
 .contenedorFooter li {
   list-style: none;
-  color: #cccccc;
+  color: #000;
   padding: 2px;
 }
 .contenedorFooter li a {
   color: #000;
   text-decoration: none;
 }
-.contenedorFooter li a:hover {
-  color: #fff;
-}
 
-.redesLista1 a {
-  color: #cccccc;
-  font-size: 25px;
-  letter-spacing: 15px;
+.redesLista1 {
+  margin-top: 5px;
 }
-.redesLista1 a:hover {
-  color: #fff;
+.redesLista1 a {
+  color: #000;
+  font-size: 22px;
+  letter-spacing: 10px;
 }
 
 .tituloListaFooter {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: 525;
 }
 
 .subTitulolistaFooter {
@@ -240,14 +324,14 @@ footer {
 }
 
 .listaFooter2 li a {
-  color: #cccccc;
+  color: #000;
 }
 
 .contTextoFooter p {
   margin: 0;
   padding-bottom: 15px;
   text-align: center;
-  color: #cccccc;
+  color: #000;
   font-size: 15px;
 }
 
@@ -257,11 +341,11 @@ footer {
   margin-top: 25px;
 }
 .contPerfil p {
-  color: #cccccc;
+  color: #000;
   margin-bottom: 3px;
   font-size: 13px;
   padding-top: 10px;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #000;
   width: 395px;
   text-align: center;
 }
@@ -273,7 +357,7 @@ footer {
   padding-bottom: 20px;
 }
 .perfilRedes a {
-  color: #cccccc;
+  color: #000;
   font-size: 17px;
   letter-spacing: 11px;
   padding-top: 2px;
@@ -300,81 +384,42 @@ footer {
 
 /* productos */
 .contenedorEnlacesProductos {
-  background-color: #264D8E;
-  text-align: center;
-  height: 38px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
-.contenedorEnlacesProductos a {
-  color: #fff;
-  text-decoration: none;
-  padding: 9px;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 38px;
-  border-right: 3px solid #000;
-}
-.contenedorEnlacesProductos .aDif {
-  border: none;
-}
-
-.btn {
-  padding: 7px;
-  margin-top: 5px;
-}
-.btn:hover {
-  text-decoration: underline;
+.contenedorEnlacesProductos a img {
+  width: 206px;
+  margin: 4px;
 }
 
 .tituloProductos {
-  margin-top: 35px;
-  text-align: center;
-  background-color: #cccccc;
-  font-size: 16px;
-  color: #000;
-  height: 25px;
-  line-height: 25px;
-  scroll-margin-top: 35px;
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  margin-left: 312px;
+  font-weight: 550;
+  scroll-margin-top: 40px;
 }
 
-.contenedorPañales, .contenedorDietetica2, .contenedorDietetica, .contenedorLeches {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 25px;
-  margin-bottom: 40px;
-}
-.contenedorPañales .card, .contenedorDietetica2 .card, .contenedorDietetica .card, .contenedorLeches .card {
-  margin: 25px;
-}
-.contenedorPañales .card .card-title, .contenedorDietetica2 .card .card-title, .contenedorDietetica .card .card-title, .contenedorLeches .card .card-title {
-  font-size: 22px;
-}
-.contenedorPañales .card .list-group-item, .contenedorDietetica2 .card .list-group-item, .contenedorDietetica .card .list-group-item, .contenedorLeches .card .list-group-item {
-  font-size: 15px;
+.contenedorDietetica2 {
+  margin-top: 20px;
 }
 
-.contenedorDietetica2 .card-img-top {
-  width: 140px;
-  margin-left: 72px;
+.imgBodyCare {
+  border-radius: 10px;
 }
 
-.contenedorOrtopedia, .contenedorAccesorios, .contenedorSuplementos2, .contenedorSuplementos, .contenedorProductosFaciales {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 40px;
-}
-.contenedorOrtopedia .card, .contenedorAccesorios .card, .contenedorSuplementos2 .card, .contenedorSuplementos .card, .contenedorProductosFaciales .card {
-  margin: 25px;
-}
-.contenedorOrtopedia .card .card-title, .contenedorAccesorios .card .card-title, .contenedorSuplementos2 .card .card-title, .contenedorSuplementos .card .card-title, .contenedorProductosFaciales .card .card-title {
-  font-size: 22px;
+.contenedorSuplementos2 {
+  margin-top: 20px;
 }
 
 /* salud */
 /* diabetes */
 .diabetes {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 700px;
   background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)), url(../assets/diabetes.jpg);
@@ -383,98 +428,127 @@ footer {
   background-attachment: fixed;
   text-align: right;
 }
-.diabetes h3 {
-  color: #fff;
-  padding-top: 100px;
-  padding-right: 90px;
-  font-size: 40px;
-  font-family: "Lato", sans-serif;
+.diabetes .subContDiabetes {
+  width: 1300px;
 }
-.diabetes p {
+.diabetes .subContDiabetes h3 {
   color: #fff;
-  padding-top: 20px;
-  margin-right: 90px;
+  padding-top: 90px;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.diabetes .subContDiabetes p {
+  color: #fff;
   font-size: 19px;
 }
-.diabetes a {
+.diabetes .subContDiabetes a {
   color: #fff;
   text-decoration: none;
   margin-top: 15px;
-  margin-right: 90px;
   font-size: 18px;
-  padding: 10px;
+  padding: 7px;
   border-radius: 7px;
-  background-color: #5e84c5;
-}
-.diabetes a:hover {
-  text-decoration: underline;
+  background-color: #f48ab6;
 }
 
+/* plantillas */
 .contenedorPlantillas {
   display: flex;
   justify-content: center;
-  margin-top: 85px;
-  margin-bottom: 90px;
+  padding-top: 100px;
+  width: 1300px;
+  margin: 0 auto;
+}
+.contenedorPlantillas .textoTitulo {
+  margin-right: 212px;
 }
 .contenedorPlantillas .textoTitulo h3 {
-  font-family: "Lato", sans-serif;
-  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
 }
 .contenedorPlantillas .textoTitulo p {
   font-size: 19px;
-  padding-top: 20px;
 }
 .contenedorPlantillas .textoTitulo a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   margin-top: 15px;
   font-size: 18px;
-  padding: 10px;
+  padding: 7px;
   border-radius: 7px;
-  background-color: #cccccc;
-}
-.contenedorPlantillas .textoTitulo a:hover {
-  text-decoration: underline;
+  background-color: #f48ab6;
 }
 .contenedorPlantillas .plantillas img {
   width: 460px;
-  margin-left: 50px;
   border-radius: 10px;
 }
 
+/* recetas */
 .contenedorRecetas {
   display: flex;
-  justify-content: center;
-  margin-top: 85px;
-  margin-bottom: 110px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 1300px;
+  margin-bottom: 100px;
 }
 .contenedorRecetas .textoTitulo2 h3 {
-  font-family: "Lato", sans-serif;
-  font-size: 40px;
-  padding-left: 90px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
 }
 .contenedorRecetas .textoTitulo2 p {
   font-size: 19px;
-  padding-top: 20px;
-  padding-left: 90px;
 }
 .contenedorRecetas .textoTitulo2 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
-  margin-top: 15px;
   font-size: 18px;
-  padding: 10px;
+  padding: 7px;
   border-radius: 7px;
-  background-color: #cccccc;
-  margin-left: 90px;
-}
-.contenedorRecetas .textoTitulo2 a:hover {
-  text-decoration: underline;
+  background-color: #f48ab6;
 }
 .contenedorRecetas .recetas img {
   width: 550px;
-  margin-right: 60px;
   border-radius: 10px;
+}
+
+/* alquiler ortopedico */
+.contenedorAlquilerOrtopedico {
+  background: linear-gradient(rgba(5, 7, 12, 0.534), rgba(5, 7, 12, 0.534)), url(../assets/importancia-rehabilitacion-despues-cirugia-ortopedica-2.jpg);
+  width: 100%;
+  height: 700px;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: right;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.contenedorAlquilerOrtopedico .subContAlquilerOrtope {
+  width: 1300px;
+  margin: 0 auto;
+}
+.contenedorAlquilerOrtopedico .subContAlquilerOrtope h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 90px;
+}
+.contenedorAlquilerOrtopedico .subContAlquilerOrtope p {
+  font-size: 19px;
+  color: #fff;
+}
+.contenedorAlquilerOrtopedico .subContAlquilerOrtope a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 7px;
+  border-radius: 7px;
+  background-color: #f48ab6;
 }
 
 /* sucursales */
@@ -482,13 +556,13 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 55px;
+  margin-top: 60px;
 }
 .contenedorMapas .sucursalEtruria .h3mapas, .contenedorMapas .sucursalPasco .h3mapas, .contenedorMapas .sucursalLaguna .h3mapas {
   font-size: 25px;
   text-align: center;
   margin-bottom: 13px;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .contenedorMapas .sucursalEtruria .listaMapa li, .contenedorMapas .sucursalPasco .listaMapa li, .contenedorMapas .sucursalLaguna .listaMapa li {
   list-style: none;
@@ -506,119 +580,418 @@ footer {
   border-radius: 50%;
   text-align: center;
 }
+/* convenios y obras sociales */
+.h2Convenios {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 2px;
+}
+
+.contenedorConveniosObrasSos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contenedorConveniosObrasSos .subcontCaja1 {
+  display: flex;
+  justify-content: center;
+  background-color: #cee1f4;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-radius: 10px;
+  width: 380px;
+  height: 130px;
+  margin: 10px;
+}
+.contenedorConveniosObrasSos .subcontCaja1 .imgLink {
+  text-decoration: none;
+  display: flex;
+}
+.contenedorConveniosObrasSos .subcontCaja1 .imgLink img {
+  width: 250px;
+  height: 67px;
+  margin-right: 10px;
+}
+.contenedorConveniosObrasSos .subcontCaja1 p {
+  color: #fff;
+  background-color: #f48ab6;
+  height: 35px;
+  width: 35px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-left: 12px;
+}
+
+/* media queris */
 @media (max-width: 1700px) {
-  .contenedorPlantillas .textoTitulo h3 {
-    font-size: 33px;
-    padding-left: 50px;
+  .categoriasTitulo, .h2ProductsDestacados, .titlElecSalud {
+    margin-left: 155px;
   }
-  .contenedorPlantillas .textoTitulo p {
-    padding-left: 50px;
-    margin-right: 10px;
+}
+@media (max-width: 1020px) {
+  .contenedorRecetas {
+    display: block;
+    width: 385px;
+    margin-top: 60px;
+    margin-bottom: 0px;
   }
-  .contenedorPlantillas .textoTitulo a {
-    margin-left: 50px;
+  .contenedorRecetas .textoTitulo2 h3 {
+    text-align: center;
+    font-size: 18px;
   }
-  .contenedorPlantillas .plantillas img {
-    width: 380px;
-    margin-left: 20px;
-    margin-right: 50px;
+  .contenedorRecetas .textoTitulo2 p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+  }
+  .contenedorRecetas .textoTitulo2 .enviarReceta {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .contenedorRecetas .textoTitulo2 .enviarReceta a {
+    padding: 4px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
   }
   .contenedorRecetas .recetas {
-    margin-left: 40px;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
   }
-  .contenedorOfertas .img-descuentos-colgate img {
-    width: 291px;
+  .contenedorRecetas .recetas img {
+    width: 250px;
+  }
+  .diabetes {
+    display: block;
+    background: none;
+    margin-top: 60px;
+    height: 0px;
+    text-align: center;
+  }
+  .diabetes .subContDiabetes {
+    margin-bottom: 60px;
+    width: 385px;
+    height: 160px;
+  }
+  .diabetes .subContDiabetes h3 {
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+  }
+  .diabetes .subContDiabetes p {
+    font-size: 11px;
+    text-align: center;
+    margin: 0px;
+    color: #000;
+  }
+  .diabetes .subContDiabetes .recetas {
+    margin-top: 10px;
+  }
+  .diabetes .subContDiabetes .recetas a {
+    padding: 4px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .contenedorPlantillas {
+    display: block;
+    padding: 0px;
+    width: 385px;
+  }
+  .contenedorPlantillas .textoTitulo {
+    margin-right: 0px;
+    margin-top: 208px;
+  }
+  .contenedorPlantillas .textoTitulo h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .contenedorPlantillas .textoTitulo p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+  }
+  .contenedorPlantillas .textoTitulo .recetas {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .contenedorPlantillas .textoTitulo .recetas a {
+    margin-top: 0px;
+    padding: 4px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .contenedorPlantillas .plantillas {
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+  }
+  .contenedorPlantillas .plantillas img {
+    width: 250px;
+  }
+  .contenedorAlquilerOrtopedico {
+    background: none;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 150px;
+  }
+  .contenedorAlquilerOrtopedico .subContAlquilerOrtope {
+    width: 385px;
+  }
+  .contenedorAlquilerOrtopedico .subContAlquilerOrtope h3 {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    padding: 0px;
+  }
+  .contenedorAlquilerOrtopedico .subContAlquilerOrtope p {
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+  }
+  .contenedorAlquilerOrtopedico .subContAlquilerOrtope .recetas {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .contenedorAlquilerOrtopedico .subContAlquilerOrtope .recetas a {
+    margin-top: 0px;
+    padding: 4px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
   }
 }
 @media (max-width: 1020px) {
-  .card {
-    width: 12rem;
+  .text-fijo {
+    font-size: 11px;
   }
-}
-@media (max-width: 1020px) {
   .logo-principal {
     width: 115px;
     margin-left: 5px;
   }
-  .text-fijo {
-    font-size: 11px;
+  .navbar-collapse .navbar-nav .nav-item .nav-link {
+    margin-right: 10px;
+    font-size: 13px;
   }
-  .nav-item .nav-link {
-    font-size: 14px;
+  .redesNavBar a {
+    display: none;
   }
-  .dropdown-menu .dropdown-item {
-    font-size: 14px;
+  .navbar-toggler {
+    padding: 0.3rem 0.5rem;
+    font-size: 16px;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    width: 25px;
   }
 }
+.carousel-control-prev-icon {
+  width: 20px;
+}
+
+.carousel-control-next-icon {
+  width: 20px;
+}
+
+#carouselExampleIndicators .carousel-indicators button {
+  width: 20px;
+  height: 2px;
+  border: 0;
+}
+
 @media (max-width: 1020px) {
-  h1 {
-    font-size: 20px;
-    margin-top: 22px;
+  .contenedorHome .h1-icon {
+    display: block;
+    margin-top: 25px;
   }
-  .categoria {
+  .contenedorHome .h1-icon h1 {
+    font-size: 15px;
+    margin-top: 13px;
+  }
+  .contenedorHome .h1-icon .contLogoH1 {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedorHome .h1-icon .contLogoH1 .logoH1 {
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+  }
+  .contenedor-categorias .categoriasTitulo, .contenedor-categorias .h2ProductsDestacados, .contenedor-categorias .titlElecSalud {
+    margin-left: 14px;
+    margin-top: 30px;
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+  .contenedor-categorias .sub-cont-categorias1 {
+    margin-top: 2px;
+  }
+  .contenedor-categorias .sub-cont-categorias1 .categoria {
     margin: 2px;
   }
-  .categoria a img {
-    width: 60px;
+  .contenedor-categorias .sub-cont-categorias1 .categoria img {
+    margin: 0px;
+    width: 120px;
   }
-  .categoria h3 {
-    font-size: 9px;
+  .contenedor-categorias .sub-cont-categorias2 {
+    display: none;
   }
-  .sub-cont-categorias1 {
-    margin-right: 25px;
-    margin-left: 5px;
+  .contenedor-categorias .sub-cont-categorias2 .categoria {
+    margin: 1px;
   }
-  .sub-cont-categorias2 {
-    margin-right: 30px;
+  .contenedor-categorias .sub-cont-categorias2 .categoria img {
+    margin: 0px;
+    width: 120px;
   }
-  .sub-cont-categorias2 h3 {
-    margin-left: 17px;
+  .contenedor-categorias .categoria-display-celular {
+    display: flex;
+    margin: 2px;
   }
-  .sub-cont-categorias2 .h3Leches {
-    margin-right: 7px;
+  .contenedor-categorias .categoria-display-celular img {
+    width: 120px;
   }
-  .contenedor-novedades, .contenedorOfertas {
+  .contenedorDermo {
+    margin-top: 30px;
+  }
+  .contenedorDermo img {
+    padding: 0px 12px 0px 12px;
+  }
+  .contenedorAccesorios {
+    margin-top: 30px;
+  }
+  .contenedorAccesorios img {
+    padding: 0px 13px 0px 13px;
+  }
+  .titlElecSalud {
+    margin-left: 14px;
+    margin-top: 30px;
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+  .contenedorElectroSalud .cardsDestacados {
+    width: 177px;
+    margin: 5px 5px 10px 5px;
+  }
+  .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest {
+    height: 60px;
+    width: 160px;
+    margin: 0px 10px 0px 10px;
+  }
+  .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest h3 {
+    font-size: 11px;
+  }
+  .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest .flexPa p {
+    font-size: 10px;
+  }
+  .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest .flexPa a {
+    font-size: 12px;
+    height: 19px;
+    width: 19px;
+    line-height: 17px;
+    margin-top: 10px;
+  }
+  .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest .flexPa .nebUltra-A {
+    margin-top: 5px;
+  }
+  .contenedorSaludGeneral {
+    margin-top: 30px;
+  }
+  .contenedorSaludGeneral .contenedorSalud {
+    padding: 20px;
+    height: 289px;
+  }
+  .contenedorSaludGeneral .contenedorSalud h3 {
+    font-size: 15px;
+  }
+  .contenedorSaludGeneral .contenedorSalud p {
+    font-size: 12px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+  .contenedorSaludGeneral .contenedorSalud .aSalud {
     margin-top: 40px;
   }
-  .sub-cont-novedades, .diaPadre .sub-cont-padre, .contenedorOfertas .sub-cont-ofertas {
-    margin-bottom: 10px;
+  .contenedorSaludGeneral .contenedorSalud .aSalud a {
+    font-size: 12px;
   }
-  .sub-cont-novedades p, .diaPadre .sub-cont-padre p, .contenedorOfertas .sub-cont-ofertas p {
+  .contenedorSaludGeneral .contenedorPlantRecetas {
+    margin: 13px 13px 0px 13px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas {
+    padding: 20px;
+    height: 289px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas h3 {
+    font-size: 15px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas p {
+    font-size: 12px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas .aRecPlant {
+    margin-top: 50px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas .aRecPlant a {
+    font-size: 12px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas {
+    margin-top: 13px;
+    padding: 20px;
+    height: 289px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas h3 {
+    font-size: 15px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas p {
+    font-size: 12px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas .aRecPlant {
+    margin-top: 14px;
+  }
+  .contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas .aRecPlant a {
+    font-size: 12px;
+  }
+  .h2ProductsDestacados, .titlElecSalud {
+    margin-left: 14px;
+    margin-top: 30px;
     font-size: 13px;
-    margin-right: 40px;
+    margin-bottom: 2px;
   }
-  .sub-cont-novedades a, .diaPadre .sub-cont-padre a, .contenedorOfertas .sub-cont-ofertas a {
+  .contenedorDestacados .cardsDestacados, .contenedorElectroSalud .cardsDestacados, .contenedorPañales .cardsDestacados, .contenedorLeches .cardsDestacados, .contenedorDietetica .cardsDestacados, .contenedorDietetica2 .cardsDestacados, .contenedorOrtopedia .cardsDestacados, .contenedorProductosFaciales .cardsDestacados, .contenedorSuplementos .cardsDestacados, .contenedorSuplementos2 .cardsDestacados {
+    width: 177px;
+    margin: 5px;
+  }
+  .contenedorDestacados .cardsDestacados .cardDest .dataCardDest, .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest, .contenedorPañales .cardsDestacados .cardDest .dataCardDest, .contenedorLeches .cardsDestacados .cardDest .dataCardDest, .contenedorDietetica .cardsDestacados .cardDest .dataCardDest, .contenedorDietetica2 .cardsDestacados .cardDest .dataCardDest, .contenedorOrtopedia .cardsDestacados .cardDest .dataCardDest, .contenedorProductosFaciales .cardsDestacados .cardDest .dataCardDest, .contenedorSuplementos .cardsDestacados .cardDest .dataCardDest, .contenedorSuplementos2 .cardsDestacados .cardDest .dataCardDest {
+    height: 60px;
+    width: 160px;
+    margin: 0px 10px 0px 10px;
+  }
+  .contenedorDestacados .cardsDestacados .cardDest .dataCardDest h3, .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest h3, .contenedorPañales .cardsDestacados .cardDest .dataCardDest h3, .contenedorLeches .cardsDestacados .cardDest .dataCardDest h3, .contenedorDietetica .cardsDestacados .cardDest .dataCardDest h3, .contenedorDietetica2 .cardsDestacados .cardDest .dataCardDest h3, .contenedorOrtopedia .cardsDestacados .cardDest .dataCardDest h3, .contenedorProductosFaciales .cardsDestacados .cardDest .dataCardDest h3, .contenedorSuplementos .cardsDestacados .cardDest .dataCardDest h3, .contenedorSuplementos2 .cardsDestacados .cardDest .dataCardDest h3 {
     font-size: 11px;
-    margin-left: 30px;
   }
-  .img-novedades img {
-    width: 150px;
-    margin: 0px 12px 10px 12px;
+  .contenedorDestacados .cardsDestacados .cardDest .dataCardDest .flexPa p, .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest .flexPa p, .contenedorPañales .cardsDestacados .cardDest .dataCardDest .flexPa p, .contenedorLeches .cardsDestacados .cardDest .dataCardDest .flexPa p, .contenedorDietetica .cardsDestacados .cardDest .dataCardDest .flexPa p, .contenedorDietetica2 .cardsDestacados .cardDest .dataCardDest .flexPa p, .contenedorOrtopedia .cardsDestacados .cardDest .dataCardDest .flexPa p, .contenedorProductosFaciales .cardsDestacados .cardDest .dataCardDest .flexPa p, .contenedorSuplementos .cardsDestacados .cardDest .dataCardDest .flexPa p, .contenedorSuplementos2 .cardsDestacados .cardDest .dataCardDest .flexPa p {
+    font-size: 10px;
   }
-  .sub-cont-padre {
-    margin-bottom: 0;
-  }
-  .sub-cont-padre p {
-    margin-left: 18px;
-  }
-  .sub-cont-padre a {
-    margin-right: 10px;
-  }
-  .diaPadre {
-    margin-bottom: 60px;
-    margin-top: 60px;
-  }
-  .diaPadre .contenedorImgPadre {
-    margin-top: 0;
-  }
-  .diaPadre .contenedorImgPadre img {
-    width: 300px;
-  }
-  .contenedorOfertas .img-descuentos-colgate img {
-    width: 150px;
-  }
-  .contenedorOfertas .sub-cont-ofertas {
-    margin-left: 32px;
+  .contenedorDestacados .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorElectroSalud .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorPañales .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorLeches .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorDietetica .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorDietetica2 .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorOrtopedia .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorProductosFaciales .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorSuplementos .cardsDestacados .cardDest .dataCardDest .flexPa a, .contenedorSuplementos2 .cardsDestacados .cardDest .dataCardDest .flexPa a {
+    font-size: 12px;
+    height: 19px;
+    width: 19px;
+    line-height: 17px;
+    margin-top: 10px;
   }
   .logo-footer {
     width: 70px;
@@ -658,7 +1031,7 @@ footer {
   }
   .contenedorFooter {
     padding-bottom: 14px;
-    margin-top: 70px;
+    margin-top: 30px;
   }
   footer {
     text-align: center;
@@ -666,8 +1039,8 @@ footer {
   .wsppLink {
     height: 35px;
     width: 35px;
-    line-height: 35px;
-    font-size: 22px;
+    line-height: 36px;
+    font-size: 21px;
     bottom: 80px;
     right: 14px;
     box-shadow: 0 0 3px #4e4e4e;
@@ -695,175 +1068,47 @@ footer {
 }
 @media (max-width: 1020px) {
   .contenedorEnlacesProductos {
-    height: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
-  .contenedorEnlacesProductos a {
-    font-size: 12px;
-    line-height: 20px;
-    padding: 4px;
-    border: 0;
+  .contenedorEnlacesProductos a img {
+    width: 115px;
   }
   .tituloProductos {
-    font-size: 15px;
-    margin-top: 25px;
-  }
-  .contenedorPañales .card, .contenedorLeches .card, .contenedorDietetica .card, .contenedorDietetica2 .card {
-    margin-top: 25px;
-  }
-  .contenedorPañales .card img, .contenedorLeches .card img, .contenedorDietetica .card img, .contenedorDietetica2 .card img {
-    width: 190px;
-    margin-left: 32px;
-  }
-  .contenedorPañales .card .card-body .card-title, .contenedorLeches .card .card-body .card-title, .contenedorDietetica .card .card-body .card-title, .contenedorDietetica2 .card .card-body .card-title {
-    font-size: 18px;
-  }
-  .contenedorPañales .card .card-body .btn, .contenedorLeches .card .card-body .btn, .contenedorDietetica .card .card-body .btn, .contenedorDietetica2 .card .card-body .btn {
     font-size: 13px;
-    padding: 5px;
+    margin: 30px 0px 2px 14px;
+    scroll-margin-top: 30px;
   }
-  .contenedorPañales .card .list-group .list-group-item, .contenedorLeches .card .list-group .list-group-item, .contenedorDietetica .card .list-group .list-group-item, .contenedorDietetica2 .card .list-group .list-group-item {
-    font-size: 13px;
+  .contenedorSuplementos2 {
+    margin: 0px;
   }
-  .contenedorLeches .card img {
-    margin-top: 15px;
-  }
-  .contenedorOrtopedia .card, .contenedorProductosFaciales .card, .contenedorSuplementos .card, .contenedorSuplementos2 .card, .contenedorAccesorios .card {
-    margin-top: 25px;
-  }
-  .contenedorOrtopedia .card img, .contenedorProductosFaciales .card img, .contenedorSuplementos .card img, .contenedorSuplementos2 .card img, .contenedorAccesorios .card img {
-    width: 190px;
-    margin-left: 32px;
-    margin-top: 10px;
-  }
-  .contenedorOrtopedia .card .card-body .card-title, .contenedorProductosFaciales .card .card-body .card-title, .contenedorSuplementos .card .card-body .card-title, .contenedorSuplementos2 .card .card-body .card-title, .contenedorAccesorios .card .card-body .card-title {
-    font-size: 18px;
-  }
-  .contenedorOrtopedia .card .card-body .btn, .contenedorProductosFaciales .card .card-body .btn, .contenedorSuplementos .card .card-body .btn, .contenedorSuplementos2 .card .card-body .btn, .contenedorAccesorios .card .card-body .btn {
-    font-size: 13px;
-    padding: 5px;
-  }
-  .contenedorOrtopedia .card .rodilleraBodyCare, .contenedorProductosFaciales .card .rodilleraBodyCare, .contenedorSuplementos .card .rodilleraBodyCare, .contenedorSuplementos2 .card .rodilleraBodyCare, .contenedorAccesorios .card .rodilleraBodyCare {
-    margin-left: 25px;
-  }
-  .contenedorDietetica .card .alfajorLulemuu {
-    width: 125px;
-    margin-left: 64px;
-    margin-top: 10px;
-  }
-  .contenedorDietetica2 .card img {
-    width: 105px;
-    margin-left: 75px;
-    margin-top: 10px;
-  }
-  .contenedorSuplementos .card img {
-    margin-top: 0;
-  }
-  .contenedorSuplementos .card .infiltrexSuplemento {
-    margin-top: 15px;
+  .contenedorDietetica2 {
+    margin: 0px;
   }
 }
 @media (max-width: 1020px) {
-  .contenedorRecetas {
-    margin-top: 40px;
-    display: block;
-    border-bottom: 2px solid #cccccc;
-    padding-bottom: 70px;
+  .h2Convenios {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
-  .contenedorRecetas .textoTitulo2 h3 {
-    font-size: 22px;
-    text-align: center;
-    padding-left: 0;
+  .contenedorConveniosObrasSos .subcontCaja1 {
+    align-items: center;
+    width: 320px;
+    height: 100px;
+    padding: 20px;
   }
-  .contenedorRecetas .textoTitulo2 p {
-    font-size: 14px;
-    padding-top: 8px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+  .contenedorConveniosObrasSos .subcontCaja1 .imgLink img {
+    width: 205px;
+    height: 57px;
+    margin-right: 0px;
   }
-  .contenedorRecetas .textoTitulo2 .enviarReceta {
-    text-align: center;
-  }
-  .contenedorRecetas .textoTitulo2 .enviarReceta a {
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 13px;
-    margin-left: 0;
-  }
-  .contenedorRecetas .recetas {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    margin-left: 0;
-  }
-  .contenedorRecetas .recetas img {
-    width: 250px;
-    margin-right: 0;
-  }
-  .diabetes {
-    background: none;
-    text-align: center;
-    height: 370px;
-    padding: 5px;
-    border-bottom: 2px solid #cccccc;
-  }
-  .diabetes h3 {
-    color: #000;
-    padding-top: 0;
-    font-size: 22px;
-    padding-right: 0;
-  }
-  .diabetes p {
-    color: #000;
-    padding-top: 10px;
-    font-size: 13px;
-    margin-right: 0;
-    padding-left: 1px;
-  }
-  .diabetes a {
-    color: #000;
-    background-color: #cccccc;
-    border-radius: 5px;
-    font-size: 13px;
-    padding: 5px;
-    margin-right: 0;
-    margin-top: 10px;
-  }
-  .contenedorPlantillas {
-    display: block;
-    text-align: center;
-  }
-  .contenedorPlantillas .textoTitulo h3 {
-    font-size: 22px;
-    padding-left: 0;
-  }
-  .contenedorPlantillas .textoTitulo p {
-    font-size: 12px;
-    padding: 10px;
-    margin-right: 0;
-  }
-  .contenedorPlantillas .textoTitulo a {
-    font-size: 13px;
-    padding: 5px;
-    border-radius: 5px;
-    margin-left: 0;
-  }
-  .contenedorPlantillas .plantillas {
-    display: flex;
-    justify-content: center;
-  }
-  .contenedorPlantillas .plantillas img {
-    width: 250px;
-    margin-top: 25px;
-    margin-left: 0;
-    margin-right: 0;
+  .contenedorConveniosObrasSos .subcontCaja1 p {
+    display: none;
   }
 }
 @media (max-width: 1020px) {
   .contenedorMapas .sucursalEtruria, .contenedorMapas .sucursalLaguna, .contenedorMapas .sucursalPasco {
-    margin-top: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   .contenedorMapas .sucursalEtruria .h3mapas h3, .contenedorMapas .sucursalLaguna .h3mapas h3, .contenedorMapas .sucursalPasco .h3mapas h3 {
     font-size: 20px;
@@ -882,14 +1127,14 @@ footer {
     line-height: 25px;
   }
   .contenedorMapas .sucursalLaguna {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   .contenedorMapas .sucursalLaguna .h3mapas h3 {
     font-size: 20px;
     padding-bottom: 10px;
   }
   .contenedorMapas .sucursalPasco {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   .contenedorMapas .sucursalPasco .h3mapas h3 {
     font-size: 20px;
