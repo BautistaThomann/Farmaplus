@@ -627,7 +627,7 @@ footer {
 }
 
 /* media queris */
-@media (max-width: 1700px) {
+@media (max-width: 1600px) {
   .categoriasTitulo, .h2ProductsDestacados, .titlElecSalud {
     margin-left: 155px;
   }
@@ -829,7 +829,7 @@ footer {
     margin-right: 0px;
   }
   .contenedor-categorias .categoriasTitulo, .contenedor-categorias .h2ProductsDestacados, .contenedor-categorias .titlElecSalud {
-    margin-left: 7px;
+    margin-left: 15px;
     margin-top: 30px;
     font-size: 13px;
     margin-bottom: 2px;
@@ -926,7 +926,7 @@ footer {
     font-size: 12px;
   }
   .contenedorSaludGeneral .contenedorPlantRecetas {
-    margin: 13px 13px 0px 13px;
+    margin: 30px 13px 0px 13px;
   }
   .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas {
     padding: 20px;
@@ -947,7 +947,7 @@ footer {
     font-size: 12px;
   }
   .contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas {
-    margin-top: 13px;
+    margin-top: 30px;
     padding: 20px;
     height: 289px;
   }
@@ -966,7 +966,7 @@ footer {
     font-size: 12px;
   }
   .h2ProductsDestacados, .titlElecSalud {
-    margin-left: 14px;
+    margin-left: 15px;
     margin-top: 30px;
     font-size: 13px;
     margin-bottom: 2px;
