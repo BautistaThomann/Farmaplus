@@ -55,19 +55,21 @@ body {
 /* frase h1 */
 .h1-icon {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 70px;
-  align-items: center;
+  gap: 1.5rem;
 }
-.h1-icon .logoH1 {
+.h1-icon img {
   width: 50px;
   height: 50px;
-  margin-right: 35px;
 }
 .h1-icon h1 {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* categorias */
@@ -132,6 +134,7 @@ body {
   background-color: #f7e9df;
   padding: 23px;
   border-radius: 12px;
+  width: 483px;
 }
 .contenedorSaludGeneral .contenedorSalud h3 {
   font-size: 20px;
@@ -139,6 +142,7 @@ body {
 .contenedorSaludGeneral .contenedorSalud p {
   font-size: 16px;
   padding-top: 10px;
+  text-wrap: balance;
 }
 .contenedorSaludGeneral .contenedorSalud .aSalud {
   margin-top: 193px;
@@ -160,6 +164,7 @@ body {
   padding: 23px;
   border-radius: 12px;
   margin-top: 0;
+  width: 765px;
   height: 252px;
 }
 .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas h3 {
@@ -627,9 +632,9 @@ footer {
 }
 
 /* media queris */
-@media (max-width: 1600px) {
+@media (max-width: 1610px) {
   .categoriasTitulo, .h2ProductsDestacados, .titlElecSalud {
-    margin-left: 155px;
+    margin-left: 160px;
   }
 }
 @media (max-width: 1020px) {
@@ -819,14 +824,12 @@ footer {
     font-size: 15px;
     margin-top: 13px;
   }
-  .contenedorHome .h1-icon .contLogoH1 {
-    display: flex;
-    justify-content: center;
-  }
-  .contenedorHome .h1-icon .contLogoH1 .logoH1 {
+  .contenedorHome .h1-icon .logoH1 {
     width: 30px;
     height: 30px;
     margin-right: 0px;
+    display: block;
+    margin: 0 auto;
   }
   .contenedor-categorias .categoriasTitulo, .contenedor-categorias .h2ProductsDestacados, .contenedor-categorias .titlElecSalud {
     margin-left: 15px;
@@ -908,8 +911,10 @@ footer {
     margin-top: 30px;
   }
   .contenedorSaludGeneral .contenedorSalud {
+    width: auto;
     padding: 20px;
     height: 289px;
+    margin: 10px;
   }
   .contenedorSaludGeneral .contenedorSalud h3 {
     font-size: 15px;
@@ -920,17 +925,18 @@ footer {
     margin-bottom: 5px;
   }
   .contenedorSaludGeneral .contenedorSalud .aSalud {
-    margin-top: 40px;
+    margin-top: 15px;
   }
   .contenedorSaludGeneral .contenedorSalud .aSalud a {
     font-size: 12px;
   }
   .contenedorSaludGeneral .contenedorPlantRecetas {
-    margin: 30px 13px 0px 13px;
+    margin: 10px 10px 0px 10px;
   }
   .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas {
     padding: 20px;
     height: 289px;
+    width: auto;
   }
   .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas h3 {
     font-size: 15px;
@@ -938,16 +944,16 @@ footer {
   .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas p {
     font-size: 12px;
     padding-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
   .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas .aRecPlant {
-    margin-top: 50px;
+    margin-top: 15px;
   }
   .contenedorSaludGeneral .contenedorPlantRecetas .subContRecetas .aRecPlant a {
     font-size: 12px;
   }
   .contenedorSaludGeneral .contenedorPlantRecetas .subContPlantillas {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 20px;
     height: 289px;
   }

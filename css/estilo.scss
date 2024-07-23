@@ -73,18 +73,20 @@ body{
 
 .h1-icon{
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 70px;
-    align-items: center;
-    .logoH1{
+    gap: 1.5rem;
+    img{
         width: 50px;
         height: 50px;
-        margin-right: 35px;
     }
     h1{
-        text-align: center;
-        font-family: $fuente-h1;
         font-size: 30px;
+        font-family: $fuente-h1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -160,12 +162,14 @@ body{
         background-color: #f7e9df;
         padding: 23px;
         border-radius: 12px;
+        width: 483px;
         h3{
             font-size: 20px;
         }
         p{
             font-size: 16px;
             padding-top: 10px;
+            text-wrap: balance;
         }
         .aSalud{
             margin-top: 193px;
@@ -187,6 +191,7 @@ body{
             padding: 23px;
             border-radius: 12px;
             margin-top: 0;
+            width: 765px;
             height: 252px;
             h3{
                 font-size: 20px;
@@ -721,9 +726,9 @@ footer{
 
 /* media queris */
 //titulos home
-@media (max-width: 1600px){
+@media (max-width: 1610px){
     .categoriasTitulo{
-        margin-left: 155px;
+        margin-left: 160px;
     }
 }
 
@@ -933,14 +938,12 @@ footer{
                 font-size: 15px;
                 margin-top: 13px;
             }
-            .contLogoH1{
-                display: flex;
-                justify-content: center;
-                .logoH1{
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 0px;
-                }
+            .logoH1{
+                width: 30px;
+                height: 30px;
+                margin-right: 0px;
+                display: block;
+                margin: 0 auto;
             }
         }
     }
@@ -1037,8 +1040,10 @@ footer{
     .contenedorSaludGeneral{
         margin-top: 30px;
         .contenedorSalud{
+            width: auto;
             padding: 20px;
             height: 289px;
+            margin: 10px;
             h3{
                 font-size: 15px;
             }
@@ -1048,34 +1053,35 @@ footer{
                 margin-bottom: 5px;
             }
             .aSalud{
-                margin-top: 40px;
+                margin-top: 15px;
                 a{
                     font-size: 12px;
                 }
             }
         }
         .contenedorPlantRecetas{
-            margin: 30px 13px 0px 13px;
+            margin: 10px 10px 0px 10px;
             .subContRecetas{
                 padding: 20px;
                 height: 289px;
+                width: auto;
                 h3{
                     font-size: 15px;
                 }
                 p{
                     font-size: 12px;
                     padding-top: 5px;
-                    margin-bottom: 5px;
+                    margin-bottom: 0px;
                 }
                 .aRecPlant{
-                    margin-top: 50px;
+                    margin-top: 15px;
                     a{
                         font-size: 12px;
                     }
                 }
             }
             .subContPlantillas{
-                margin-top: 30px;
+                margin-top: 20px;
                 padding: 20px;
                 height: 289px;
                 h3{
